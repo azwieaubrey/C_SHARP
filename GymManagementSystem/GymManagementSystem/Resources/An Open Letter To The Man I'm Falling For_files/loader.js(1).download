@@ -1,0 +1,445 @@
+			disable_syncroll = 0;
+			window.MB_PERCENT_BEFORE_SYNCROLL = 50;
+		
+var _loadCookies = function(w) {
+
+		(function(d) {
+			var px = d.createElement("img");
+			px.width = "1";
+			px.height = "1";
+			px.style.width = "1px";
+			px.style.height = "1px";
+			px.src = "https://player.mediabong.net/t/ex.php?uid=31f5a864d8eb10ca";
+			d.body.appendChild(px);
+		})(w.document);
+				(function(d,t) {
+			var sc = d.createElement("img");
+			sc.src = "https://x.bidswitch.net/sync?ssp=mediabong";
+									sc.width = 1;
+			sc.height = 1;
+			sc.style.width = "1px";
+			sc.style.height = "1px";
+			sc.style.display = "inline";
+			sc.style.boxSizing = "content-box";
+			sc.style.display = "none";
+						d.body.appendChild(sc);
+		}(w.document,'script'));
+				(function(d,t) {
+			var sc = d.createElement("img");
+			sc.src = "https://p.adsymptotic.com/d/px?_pid=13497&_psign=50c4a16a444535f9f58132d4ff8b970e&_pu=&_rand=1503301501&_redirect=http%3A%2F%2Fplayer.mediabong.net%2Fsync%2Fdrbg%3Fuid%3D%24%7BUUID%7D";
+									sc.width = 1;
+			sc.height = 1;
+			sc.style.width = "1px";
+			sc.style.height = "1px";
+			sc.style.display = "inline";
+			sc.style.boxSizing = "content-box";
+			sc.style.display = "none";
+						d.body.appendChild(sc);
+		}(w.document,'script'));
+				(function(d,t) {
+			var sc = d.createElement("iframe");
+			sc.src = "https://ssum-sec.casalemedia.com/usermatch?s=184634&cb=https%3A%2F%2Fplayer.mediabong.net%2Fsync%2Fidex%3Fuuid%3D31f5a864d8eb10ca%26uid%3D";
+									sc.width = 1;
+			sc.height = 1;
+			sc.style.border = "none";
+						d.body.appendChild(sc);
+		}(w.document,'script'));
+				(function(d,t) {
+			var sc = d.createElement("script");
+			sc.src = "https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.js";
+								sc.setAttribute("data-partner","mediabong_us");
+										sc.setAttribute("data-region","na");
+										sc.setAttribute("data-country","us");
+										sc.setAttribute("data-endpoint","us-west");
+											d.body.appendChild(sc);
+		}(w.document,'script'));
+			_loadCookies = function(w) {};
+}
+
+var setupRules =  [{"config_id":"690","publisher_id":"438","domain":"theodysseyonline.com","syncroll_type":"floating_banner floating_only","disable_test":"","detection_rules":[".entry-content p","#rendered-body p","","","",""],"paragraph":"","inread_position":"1","bottom_position":"2","bloc_position":"-2","player_100p":"1","passback":"","min_paragraph_count":"0","margin":5,"quick_load":"1","passback_always":0,"stay_in_iframe":"0","max_player_width":"0","editorial_video_position":"keep","pause_after_ad":"1","load_detect_se":"0","inread_at_end":"0","min_width_for_floating":"0","floating_margin_bottom":"0","append_config":"0","disable_center":0,"reload_on_changestate":"0","custom_css_first_player":"","custom_css_second_player":"","no_video_if_passback":"0","fixed_syncroll":"0","article_display_detection":"","shadowroot":"","articleDetect":[".entry-content p","#rendered-body p"],"paragraphPosition":["1","2"],"paragraphCount":0,"quickLoad":1,"maxWidth":0,"videoPosition":"bottom","pauseAfterAd":1,"loadDetectScript":0,"inreadAtEnd":0,"minFloatingWidth":0,"floatingMarginBottom":0,"appendConfig":0,"noVideoIfPassback":0,"fixedSyncroll":0,"loadDetect":"","impressionUrl":"https:\/\/securepubads.g.doubleclick.net\/pcs\/view?xai=AKAOjss837OVd_xeZ07uPlwXHdI357oDGj8bEJd9lqFg3jFCjU4StWk-hA8SuRV9WLoAmGsCuQmXfjNLeteq6GLsfYQ9nrWNIet4j1WEc2agYBJJrIzWH7LnZWuZzUUeIG72sKPTSsqlMtuTQ0En5zlxPlDkaf9WA3uZ18ZDGsLPAQEC6ACp6I3aOnhd-ZDRnSxKqjzCRGXTrrfdxdsK1H8TJYZ4C7qp4DaQJHFwL943tiV9hm1HnYIVDo5IzOy_V2cQ-u7g6Pl3SZy0RFqXfco&sig=Cg0ArKJSzD1GPbnuB96SEAE&urlfix=1&adurl="}];
+var _srLoader = function(w, rules) {
+			w.Mb_onAdImpression = function(id) {
+			var sc = w.document.createElement("script");
+			sc.type = "text/javascript";
+			sc.async = true;
+			sc.src = "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjss837OVd_xeZ07uPlwXHdI357oDGj8bEJd9lqFg3jFCjU4StWk-hA8SuRV9WLoAmGsCuQmXfjNLeteq6GLsfYQ9nrWNIet4j1WEc2agYBJJrIzWH7LnZWuZzUUeIG72sKPTSsqlMtuTQ0En5zlxPlDkaf9WA3uZ18ZDGsLPAQEC6ACp6I3aOnhd-ZDRnSxKqjzCRGXTrrfdxdsK1H8TJYZ4C7qp4DaQJHFwL943tiV9hm1HnYIVDo5IzOy_V2cQ-u7g6Pl3SZy0RFqXfco&sig=Cg0ArKJSzD1GPbnuB96SEAE&urlfix=1&adurl=";
+			var node = w.document.getElementsByTagName('head')[0];
+			node.appendChild(sc);
+		};
+			var cont = w.document;
+	var articleContent = "", tmpContainer = null;
+		var matched = matchContent(rules, cont);
+		if(matched === 1) {
+						w.MB_PADDING = rules.margin;
+			w.MB_VIDEO_POSITION = rules.videoPosition;
+			if (rules.fixedSyncroll == 1)
+				w.MB_PAUSE_AFTER_AD = 1;
+			else
+				w.MB_PAUSE_AFTER_AD = rules.pauseAfterAd;
+			w.MB_FLOATING_MIN_WIDTH = rules.minFloatingWidth;
+			w.MB_FLOATING_MARGIN_BOTTOM = rules.floatingMarginBottom;
+			w.MB_NO_VIDEO_IF_PASSBACK = rules.noVideoIfPassback;
+			w.MB_FIXED_SYNCROLL = rules.fixedSyncroll;
+			w.MB_ARTICLE_DISPLAY_DETECTION = rules.article_display_detection;
+
+			if (rules.passback != "") {
+				w.mb_syncroll_passback = rules.passback;
+				w.mb_passback_always = rules.mb_passback_always;
+			}
+			else {
+				w.mb_syncroll_passback = "";
+				w.mb_passback_always = 0;
+			}
+
+			 // Add main script
+			 				cont.loadPlayer = function(window,document) {
+					var mbCont = document.getElementById("mb_container"), playerCont = document.createElement("div");
+	        		playerCont.id = "mb_video_c2ffa97ac35c2e66af8836a600171df1";
+	        		mbCont.appendChild(playerCont);
+	        		    			window.fireEvent = function(eventName)  {
+						return;
+    				var sc = document.createElement("img"), currentScript = "";
+    				if(typeof window.MB_CURRENT_SCRIPT != "undefined")
+    					currentScript = window.MB_CURRENT_SCRIPT;
+
+    				sc.src = "http://player.mediabong.net/t/dbg.php?pid=438&script="+currentScript+"&event="+eventName+"&uuid=31f5a864d8eb10ca&suid=5f23b387d23cc4bd&url="+encodeURIComponent(window.document.location.href);
+    				document.getElementsByTagName("head")[0].appendChild(sc);
+    			};
+
+    			window.fireEvent('dfp');
+
+    			if(typeof window.mb_players == 'undefined') {
+			        window.mb_players = {};
+				}
+
+				window.mb_players["mb_video_c2ffa97ac35c2e66af8836a600171df1"] = {"forceHtml5":true,"chrome55Plus":true,"disableFlashAds":true,"mobile_script_url":"https:\/\/static.mediabong.com\/videojs\/mb.1706281.js","jsmpg_script_url":"https:\/\/static.mediabong.com\/canvas\/mb.1605121.js","prod":1,"pub":438,"publisherId":438,"isExternal":0,"currentScript":null,"start":"0.56497800 1503301501","server":"https:\/\/player.mediabong.net","div":"mb_video_c2ffa97ac35c2e66af8836a600171df1","pcent":null,"stopIfAutoplay":null,"mouseOver":"{","width":"100%","height":"100%","delay":0,"ready":false,"checkScroll":false,"checkStopScroll":false,"timeoutObj":null,"playerState":0,"currentVolume":0,"snap_id":"2222965","thumbnail":"http:\/\/static.mediabong.com\/img\/default_preroll_picture_fr.png","flashvars":{"application_id":"mb_video_c2ffa97ac35c2e66af8836a600171df1","application_name":"mediabong.com","manifest_url":"https%3A%2F%2Fplayer.mediabong.net%2Fmanifest%2F3%2F438-2.json%3Fuuid%3D31f5a864d8eb10ca%26suid%3D5f23b387d23cc4bd%26bloc%3D0%26display_title%3D0%26rnd%3D1503301501","display_start":1,"session_id":12,"estat_id":"","estat_media_section_1":"","estat_media_section_2":"","estat_media_section_3":"","estat_media_referer":"#","estat_media_genre":"#"},"params":{"allowscriptaccess":"always","allowfullscreen":"true","wmode":"opaque","quality":"high","bgcolor":"#222222"},"attributes":{"allowscriptaccess":"always","allowfullscreen":"true","wmode":"opaque","quality":"high","bgcolor":"#222222","styleclass":"mb_video"},"videoStart":0,"doConvert":true,"inBlock":0,"blocplayer_id":0,"jsonDoc":null,"myPlayer":null,"tdVideoAdBegin":false,"tdVideoAdFiq":false,"tdVideoAdMid":false,"tdVideoAdThq":false,"tdVideoAdComp":false,"tdVideoAdEnd":false,"tdVideoAdClick":false,"tdVideoContentStart":false,"tdVideoContentFiq":false,"tdVideoContentMid":false,"tdVideoContentThq":false,"tdVideoContentComp":false,"tdVideoContentEnd":false,"tdVideoContentFullSc":false,"clickAdLink":"","playingAdd":false,"videoContentPlaying":false,"adAlertPopin":false,"posRV":0,"nbVideoRV":0,"nb_loop":0,"cpt":0,"xmlDoc2":null,"taghttp":null,"isPlaying":false,"isFS":false,"events":{"print":"https:\/\/player.mediabong.net\/t\/t.php?snap=2222965&evt=print&url=%5Breferer%5D&ts=%5Btimestamp%5D&mobile=0&cpid=%5Bcampaign_id%5D&bloc=0&adb=%5Badblock%5D&adserver=%5Bad_server_id%5D&sync=%5Bsyncrollenabled%5D&synctype=%5Bsyncrolltype%5D&ppos=%5Bplayerposition%5D&scroll=%5Bscrollvalue%5D&ratio=%5Bplayerratio%5D&vis=%5Bvisibility%5D&visattn=%5Bvisibilityattn%5D&mute=%5Bmute%5D&rnd=1503301501.5647&suid=5f23b387d23cc4bd&uuid=31f5a864d8eb10ca&network=&deal_id=%5Bdealid%5D&exchange_id=%5Bpartnerid%5D&dsp_id=%5Bseatid%5D&cpm=%5Bcpm%5D&fgp=%5Bfgp%5D&fgp_enhanced=%5Bfgp_enhanced%5D&tech=%5Btech%5D&latency=%5Blatency%5D","printSyncroll":"https%3A%2F%2Fplayer.mediabong.net%2Fprint_syncroll.php%3Fsessid%3D23_599a8f7d8749d3.77627133%26sid%3D2222965%26url%3D%5BURL%5D%26rnd%3D%5BRND%5D","syncrollScrolled":"https%3A%2F%2Fplayer.mediabong.net%2Ft%2Fsyncroll_scrolled.php%3Fsessid%3D23_599a8f7d8749d3.77627133%26sid%3D2222965%26url%3D%5BURL%5D%26rnd%3D%5BRND%5D","syncrollNoAd":"https%3A%2F%2Fplayer.mediabong.net%2Ft%2Fsyncroll_no_ad.php%3Fsessid%3D23_599a8f7d8749d3.77627133%26sid%3D2222965%26url%3D%5BURL%5D%26rnd%3D%5BRND%5D","script_loaded":"https%3A%2F%2Fplayer.mediabong.net%2Ft%2Fjsload.php%3Flt%3D%5Bloadtime%5D%26sessid%3D23_599a8f7d8749d3.77627133%26sid%3D2222965%26bloc%3D0%26url%3D%5BURL%5D%26rnd%3D%5BRND%5D"},"title":"Syncroll video","endAfterPreroll":1,"title_position":"NONE","custom_title":"","addMuteButton":0,"disable_syncad":false,"syncroll_z_index":0,"noMouseOverVolume":0,"skip_duration":0,"campaigns":null,"timeTracker":"https:\/\/player.mediabong.net\/t\/t.php?snap=2222965&evt=second&url=[referer]&ts=[timestamp]&mobile=0&cpid=[campaign_id]&bloc=0&adb=[adblock]&adserver=[ad_server_id]&sync=[syncrollenabled]&synctype=[syncrolltype]&ppos=[playerposition]&scroll=[scrollvalue]&ratio=[playerratio]&vis=[visibility]&visattn=[visibilityattn]&mute=[mute]&rnd=1503301501.5649&suid=5f23b387d23cc4bd&uuid=31f5a864d8eb10ca&network=&deal_id=[dealid]&exchange_id=[partnerid]&dsp_id=[seatid]&cpm=[cpm]&fgp=[fgp]&fgp_enhanced=[fgp_enhanced]&tech=[tech]&latency=[latency]&second=[second]&ad_progress=[adprogress]&attn=[attentionscore]&attns=[attentionscore_sum]&vistotal=[viewability_total]","mrcImpression":"https:\/\/player.mediabong.net\/t\/t.php?snap=2222965&evt=impression_mrc&url=[referer]&ts=[timestamp]&mobile=0&cpid=[campaign_id]&bloc=0&adb=[adblock]&adserver=[ad_server_id]&sync=[syncrollenabled]&synctype=[syncrolltype]&ppos=[playerposition]&scroll=[scrollvalue]&ratio=[playerratio]&vis=[visibility]&visattn=[visibilityattn]&mute=[mute]&rnd=1503301501.5648&suid=5f23b387d23cc4bd&uuid=31f5a864d8eb10ca&network=&deal_id=[dealid]&exchange_id=[partnerid]&dsp_id=[seatid]&cpm=[cpm]&fgp=[fgp]&fgp_enhanced=[fgp_enhanced]&tech=[tech]&latency=[latency]&second=[second]&ad_progress=[adprogress]&attn=[attentionscore]","adserverLoading":"https:\/\/player.mediabong.net\/t\/t.php?snap=2222965&evt=inventory&url=[referer]&ts=[timestamp]&mobile=0&cpid=[campaign_id]&bloc=0&adb=[adblock]&adserver=[ad_server_id]&sync=[syncrollenabled]&synctype=[syncrolltype]&ppos=[playerposition]&scroll=[scrollvalue]&ratio=[playerratio]&vis=[visibility]&visattn=[visibilityattn]&mute=[mute]&rnd=1503301501.5647&suid=5f23b387d23cc4bd&uuid=31f5a864d8eb10ca&network=&deal_id=[dealid]&exchange_id=[partnerid]&dsp_id=[seatid]&cpm=[cpm]&fgp=[fgp]&fgp_enhanced=[fgp_enhanced]&tech=[tech]&latency=[latency]","adError":"https:\/\/player.mediabong.net\/t\/t.php?snap=2222965&evt=aderror&url=[referer]&ts=[timestamp]&mobile=0&cpid=[campaign_id]&bloc=0&adb=[adblock]&adserver=[ad_server_id]&sync=[syncrollenabled]&synctype=[syncrolltype]&ppos=[playerposition]&scroll=[scrollvalue]&ratio=[playerratio]&vis=[visibility]&visattn=[visibilityattn]&mute=[mute]&rnd=1503301501.5648&suid=5f23b387d23cc4bd&uuid=31f5a864d8eb10ca&network=&deal_id=[dealid]&exchange_id=[partnerid]&dsp_id=[seatid]&cpm=[cpm]&fgp=[fgp]&fgp_enhanced=[fgp_enhanced]&tech=[tech]&latency=[latency]","eventTracker":"https:\/\/player.mediabong.net\/t\/t.php?snap=2222965&evt=[event]&url=[referer]&ts=[timestamp]&mobile=0&cpid=[campaign_id]&bloc=0&adb=[adblock]&adserver=[ad_server_id]&sync=[syncrollenabled]&synctype=[syncrolltype]&ppos=[playerposition]&scroll=[scrollvalue]&ratio=[playerratio]&vis=[visibility]&visattn=[visibilityattn]&mute=[mute]&rnd=1503301501.5648&suid=5f23b387d23cc4bd&uuid=31f5a864d8eb10ca&network=&deal_id=[dealid]&exchange_id=[partnerid]&dsp_id=[seatid]&cpm=[cpm]&fgp=[fgp]&fgp_enhanced=[fgp_enhanced]&tech=[tech]&latency=[latency]","enableFloatingBug":0,"ipadAsIphone":0,"requireSyncroll":1,"sessionId":"23_599a8f7d8749d3.77627133","add_close_over_video":0,"adserver_has_cta":"[140047,11,140461,140497,140498,140499,140500,140501,140512,140503,140507,140511,140513,140514,140563,140515,140519,140520,140521,140522,140523,140524,140525,140526,140527,140528,140532,140533,140544,140545,140546,140547,140551,140552,140553,140554,140584,140585,140669,140670,140671,140672,140673,140674,140675,140676,140677,140741,140742,140743,140744,140745,140746,140765,140792,140793,140794,140795,140796,140797,140798,140799,140800,140801,140837,140841,140854,140856,140857]","enableSound":0};
+				if(typeof Mb_current_url === "undefined") {
+					console.log("No current url defined");
+					window.mb_players["mb_video_c2ffa97ac35c2e66af8836a600171df1"]["flashvars"]["referer"] = encodeURIComponent(document.location.href);
+					window.mb_players["mb_video_c2ffa97ac35c2e66af8836a600171df1"]["flashvars"]["website"] = encodeURIComponent(document.location.host.substring(document.location.host.lastIndexOf(".", document.location.host.lastIndexOf(".") - 1) + 1));
+				} else {
+					console.log("Current url : "+Mb_current_url);
+					mb_players["mb_video_c2ffa97ac35c2e66af8836a600171df1"]["flashvars"]["referer"] = Mb_current_url;
+					mb_players["mb_video_c2ffa97ac35c2e66af8836a600171df1"]["flashvars"]["website"] = encodeURIComponent(document.location.host.substring(document.location.host.lastIndexOf(".", document.location.host.lastIndexOf(".") - 1) + 1));
+				}
+
+    			if (window.Mb === undefined) {
+    				window.fireEvent('loadmb');
+					var sv = document.createElement('script');
+        			sv.type ="text/javascript";
+        			sv.src = "https://static.mediabong.com/scripts/mb.full.1708172.js";
+        			sv.async = true;
+        			if(sv.addEventListener) {
+            				sv.addEventListener("load",function() { window.Mb.boot("mb_video_c2ffa97ac35c2e66af8836a600171df1",'1607222'); window.fireEvent('boot1'); }, false);
+       				}
+        			else if(sv.readyState) {
+            			sv.onreadystatechange = function() {
+                			if(this.readyState === "loaded" || this.readyState === "complete") {
+								Mb.boot("mb_video_c2ffa97ac35c2e66af8836a600171df1",'1607222');
+								window.fireEvent('boot2');
+                			}
+            			};
+        			}
+
+        			document.getElementsByTagName("head")[0].appendChild(sv);
+        			if(typeof window.onMediabongExternalPlayerReady == 'function') {
+            			window.onMediabongExternalPlayerReady(["https%3A%2F%2Fplayer.mediabong.net%2Fprint.php%3Fsid%3D2222965%26bloc%3D%26url%3D%5BURL%5D%26rnd%3D%5BRND%5D,https%3A%2F%2Fplayer.mediabong.net%2Fplay.php%3Fsid%3D2222965%26bloc%3D%26url%3D%5BURL%5D%26rnd%3D%5BRND%5D"]);
+        			}
+				} else {
+					window.fireEvent('boot3');
+					Mb.boot("mb_video_c2ffa97ac35c2e66af8836a600171df1",'1607222');
+				}
+
+				window.mb_skipin = "Skip in";
+				window.mb_skip = "Skip";				};
+
+            	cont.loadPlayer(w, w.document);
+            
+            if(rules['reload_on_changestate'] == 1) {
+
+				(function(history){
+					if (typeof history.onpushstate != "function") {
+					    var pushState = history.pushState;
+					    history.pushState = function(state) {
+					        if (typeof history.onpushstate == "function")
+					            history.onpushstate({state: state});
+					        return pushState.apply(history, arguments);
+					    }
+				    }
+				})(window.history);
+
+				var onStateChangeFunction = function() {
+									var loaderUrl = "http://player.mediabong.net/syncroll/438/loader.js?url="+ encodeURIComponent("http://theodysseyonline.com") + "&rnd=" + new Date().getTime();
+									if (typeof Mb !== "undefined")
+						Mb.stop();
+					var sc = document.createElement('script');
+			        sc.src = loaderUrl;
+			        sc.type = 'text/javascript';
+			        sc.async = true;
+			        var s = document.getElementsByTagName('script')[0];
+			        s.parentNode.insertBefore(sc, s);
+				};
+
+				history.onpushstate = onStateChangeFunction;
+				window.onpopstate = onStateChangeFunction;
+            }
+
+		} else {
+			// Record container error
+			var errorType = (matched === -1)?"test":"paragraph";
+			var sc = cont.createElement("script");
+        	sc.type = "text/javascript";
+            sc.async = true;
+	        sc.src = 'https://player.mediabong.net/t/conterror.php?lt=0&cid=438&rnd='+Math.random()+'&type='+errorType+'&url='+encodeURIComponent(window.document.location.href);
+        	var node = cont.getElementsByTagName('head')[0];
+            node.appendChild(sc);
+		}
+		return matched;
+};
+
+var matchContent = function(setup, cont) {
+	if(setup['disable_test'] != "") {
+		var tmp = setup['disable_test'].split(",");
+		for(matchIdx = 0; matchIdx < tmp.length; matchIdx++) {
+			console.log("MB Disable - Trying "+tmp[matchIdx]);
+			if(cont.querySelectorAll(tmp[matchIdx]).length > 0)
+				return -1;
+		}
+	}
+	if(setup['stay_in_iframe'] == 2) {
+		var tmpContainer = window.frameElement;
+		return insertSlots(tmpContainer, setup, cont);
+	} else {
+		for(var matchKey in setup['articleDetect']) {
+			if (!isNaN(matchKey)) {
+				console.log("MB - Trying "+setup['articleDetect'][matchKey]);
+				var tmpContainer = cont.querySelectorAll(setup['articleDetect'][matchKey]);
+				if(tmpContainer.length >= setup['paragraphCount'] && tmpContainer.length > 0) {
+					return insertSlots(tmpContainer, setup, cont);
+			                break;
+				}
+			}
+		}
+		return 0;
+	}
+};
+
+var insertSlots = function(parts, rules, cont) {
+	var c1 = cont.createElement("div"), c1_1 = cont.createElement("div"), c2 = cont.createElement("div"), c2_1 = cont.createElement("div");
+	if(rules['custom_css_first_player'] != "")
+		c1_1.style.cssText = rules['custom_css_first_player'];
+	if(rules['custom_css_second_player'] != "")
+		c2_1.style.cssText = rules['custom_css_second_player'];
+
+	c1.id = "mb_video_syncad";
+	c1.style.display = 'block';
+	c1.className = rules['syncroll_type'];
+	c2.id = "mb_container";
+
+	if(rules['player_100p'] == 1) {
+		c1_1.style.width = "100%";
+		c2.style.width = "100%";
+	} else {
+		c1_1.style.width = "75%";
+		c1_1.style.marginLeft = "auto";
+		c1_1.style.marginRight = "auto";
+		c2.style.width = "75%";
+		c2.style.marginLeft = "auto";
+		c2.style.marginRight = "auto";
+	}
+
+	if(rules['maxWidth'] > 0) {
+		c1_1.style.maxWidth = rules['maxWidth']+"px";
+		c2.style.maxWidth = rules['maxWidth']+"px";
+		if(!rules['disable_center']) {
+			c1_1.style.marginLeft = "auto";
+			c1_1.style.marginRight = "auto";
+			c2.style.marginLeft = "auto";
+			c2.style.marginRight = "auto";
+		}
+	}
+
+	c2.style.marginTop = "0px";
+	c2.style.display = 'block';
+	c1.style.marginTop = "0px";
+	c1_1.style.marginTop = "0px";
+	c1_1.style.display = 'block';
+	c1_1.style.boxSizing = "content-box";
+
+
+	c1_1.appendChild(c1);
+	c2_1.appendChild(c2);
+
+	if (rules['appendConfig'] == 1)
+	{
+		if (typeof parts[0] === "undefined")
+			return 0;
+		parts[0].appendChild(c1_1);
+		parts[0].appendChild(c2_1);
+		// Check if container are really added to the dom
+		var cont1 = cont.getElementById("mb_video_syncad"), cont2 = cont.getElementById("mb_container");
+		if(cont1 == null || cont2 == null) {
+			return 0;
+		} else {
+			return 1;
+		}
+	}
+	if (rules['stay_in_iframe'] == 2)
+	{
+		if (typeof parts === "undefined" || parts == null)
+			return 0;
+		parts.parentNode.insertBefore(c1_1, parts);
+		parts.parentNode.insertBefore(c2_1, parts);
+		// Check if container are really added to the dom
+		var cont1 = cont.getElementById("mb_video_syncad"), cont2 = cont.getElementById("mb_container");
+		if(cont1 == null || cont2 == null) {
+			return 0;
+		} else {
+			return 1;
+		}
+	}
+
+	if (rules['paragraphPosition'][0] == "middle")
+		rules['paragraphPosition'][0] = Math.floor(parts.length / 2);
+
+	if (typeof parts[rules['paragraphPosition'][0]] === "undefined" && rules['inreadAtEnd'] == 1)
+		rules['paragraphPosition'][0] = "end";
+
+	if (typeof parts[rules['paragraphPosition'][1]] === "undefined")
+		rules['paragraphPosition'][1] = "end";
+
+
+	if (typeof parts[rules['paragraphPosition'][0]] !== "undefined" || (rules['paragraphPosition'][0] == "end" && typeof parts[parts.length - 1] !== "undefined"))
+	{
+
+		if(rules['paragraphPosition'][0] == "end")
+			parts[parts.length - 1].parentNode.appendChild(c1_1);
+		else
+			parts[rules['paragraphPosition'][0]].parentNode.insertBefore(c1_1, parts[rules['paragraphPosition'][0]]);
+		if(rules['paragraphPosition'][1] == "end")
+			parts[parts.length - 1].parentNode.appendChild(c2_1);
+		else if (typeof parts[rules['paragraphPosition'][1]] !== "undefined")
+			parts[rules['paragraphPosition'][1]].parentNode.insertBefore(c2_1, parts[rules['paragraphPosition'][1]]);
+
+		// Check if container are really added to the dom
+		var cont1 = cont.getElementById("mb_video_syncad"), cont2 = cont.getElementById("mb_container");
+		if(cont1 == null || cont2 == null) {
+			return 0;
+		} else {
+			return 1;
+		}
+	} else {
+		return 0;
+	}
+
+};
+
+var hasThirdPartyPlayers = function(document) {
+	// Daily, Youtube, INA
+    iframes = document.getElementsByTagName("iframe");
+
+    for(i in iframes) {
+		if(iframes[i].src != null) {
+        	if(iframes[i].src.substr(0,29) == "http://www.youtube.com/embed/" || iframes[i].src.substr(0,30) == "https://www.youtube.com/embed/")
+				return true;
+            else if(iframes[i].src.substr(0,33) == "http://www.dailymotion.com/embed/" || iframes[i].src.substr(0,34) == "https://www.dailymotion.com/embed/")
+				return true;
+			else if(iframes[i].src.substr(0,30) == "http://www.ina.fr/video/embed/")
+				return true;
+		}
+    }
+
+    // JWPlayer
+    scripts = document.getElementsByTagName("script");
+
+    for(i in scripts) {
+		if(scripts[i].src != null) {
+			if(scripts[i].src.substr(0,30) == "http://content.jwplatform.com/" || scripts[i].src.substr(0,31) == "https://content.jwplatform.com/")
+				return true;
+		}
+    }
+
+	return false;
+}
+
+var busterHandle = function(a, frameBuster) {
+	try {
+		a.document;
+	} catch(e) {
+		if (frameBuster) {
+			var iframe = document.createElement("iframe");
+			iframe.src = frameBuster;
+			document.body.appendChild(iframe);
+		}
+		else {
+			(function() {
+				var url = (window.location != window.parent.location) ? document.referrer : document.location;
+				var sc = document.createElement("img");
+				sc.src = "//player.mediabong.net/t/ifb.php?pid=438&domain="+encodeURIComponent(url);
+				sc.width = 1;
+				sc.height = 1;
+				document.body.appendChild(sc);
+			}(document,'script'));
+			throw new Error("Syncroll can't bust out of iFrame.");
+		}
+		return false;
+	}
+	return true;
+}
+
+var startDfpLoader = function(setupRules) {
+	var frameBuster = "";
+
+	for(idx = 0; idx < setupRules.length; idx++) {
+		var rules = setupRules[idx];
+		if(rules['stay_in_iframe'] == 0 || rules['stay_in_iframe'] == 2) {
+			// Breaking adserver's iframe
+			var a = (window.top||window.parent||window), startLoad = true;
+			if(rules['stay_in_iframe'] == 2) {
+				var iframeContainer = window.frameElement;
+				if (iframeContainer == null)
+					throw new Error("The syncroll is not loaded in an iframe.");
+			}
+			if (!busterHandle(a, frameBuster))
+				break;
+			if(rules['stay_in_iframe'] == 2) {
+				a.mb_iframe_height = iframeContainer.height;
+				a.mb_iframe = iframeContainer;
+				iframeContainer.height = "1";
+			}
+			if (rules['loadDetectScript'] == 1) {
+				var hasPlayers = hasThirdPartyPlayers(a.document);
+				if(hasPlayers)
+					startLoad = false;
+			}
+			a.mb_script_started_ms = new Date().getTime();
+			_loadCookies(a);
+			if(startLoad) {
+				if(_srLoader(a, rules) === 1)
+					break;
+			}
+		} else if(rules['stay_in_iframe'] == 1) {
+			var a = window, startLoad = true;
+			a.mb_script_started_ms = new Date().getTime();
+			_loadCookies(a);
+			// Resize iframe (height)
+			var currentContainer = window.frameElement;
+			if(currentContainer != null && typeof currentContainer.id != "undefined") {
+				var topWindow = window.top||window.parent||window;
+				topWindow.document.getElementById(currentContainer.id).style.height = topWindow.document.getElementById(currentContainer.id).offsetWidth*0.5625+"px";
+			}
+
+			if (rules['loadDetectScript'] == 1) {
+				var hasPlayers = hasThirdPartyPlayers(a.document);
+				if(hasPlayers)
+					startLoad = false;
+			}
+			if(startLoad) {
+				if(_srLoader(a, rules) === 1)
+					break;
+			}
+		}
+	}
+}
+
+startDfpLoader(setupRules);

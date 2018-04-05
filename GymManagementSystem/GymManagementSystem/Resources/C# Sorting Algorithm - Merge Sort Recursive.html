@@ -1,0 +1,1012 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0065)http://www.softwareandfinance.com/CSharp/MergeSort_Recursive.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="cufon-active cufon-ready" style=""><!-- InstanceBegin template="/Templates/CS.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Content-Language" content="en, ru, zh-CN, zh-TW, hi, ja, ms, es, fr, de, el, ar, th">
+<meta property="fb:app_id" content="200130153406985">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./C# Sorting Algorithm - Merge Sort Recursive_files/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="./C# Sorting Algorithm - Merge Sort Recursive_files/style.css" type="text/css" media="screen">
+
+	<link rel="stylesheet" href="./C# Sorting Algorithm - Merge Sort Recursive_files/responsive.css" type="text/css" media="all"> 
+	<link rel="stylesheet" href="./C# Sorting Algorithm - Merge Sort Recursive_files/responsiveslides.css">  
+	<script type="text/javascript" async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/ga.js.download"></script><script src="./C# Sorting Algorithm - Merge Sort Recursive_files/ca-pub-9285823372206627.js.download"></script><script src="./C# Sorting Algorithm - Merge Sort Recursive_files/jquery-1.7.1.min.js.download" type="text/javascript"></script>
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/cufon-yui.js.download" type="text/javascript"></script><style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/cufon-replace.js.download" type="text/javascript"></script>
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/Vegur_500.font.js.download" type="text/javascript"></script>
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/Ropa_Sans_400.font.js.download" type="text/javascript"></script> 
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/FF-cash.js.download" type="text/javascript"></script>	  
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/tms-0.3.js.download" type="text/javascript"></script>
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/tms_presets.js.download" type="text/javascript"></script>
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/jquery.easing.1.3.js.download" type="text/javascript"></script>
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/script.js.download" async="async" type="text/javascript"></script>
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/ads.js.download"> </script>
+
+
+<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/jquery.min.js.download" type="text/javascript"></script>
+<script> 
+$(function(){
+	$("#SoftwareIndexContent").load("/Magazine/Common/SoftwareIndex.html"); 
+});
+</script> 
+
+	<script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/css3-mediaqueries.js.download"></script>
+	<script src="./C# Sorting Algorithm - Merge Sort Recursive_files/responsiveslides.js.download"></script>
+	<script>
+		$(function () {
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: true,
+			nav: true,
+			speed: 500,
+			maxwidth: 960,
+			namespace: "centered-btns"
+		  });
+		});
+	</script>
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+		<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+			<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For 
+
+a faster, safer browsing experience, upgrade for free today." />
+		</a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+ 		<script type="text/javascript" src="js/html5.js"></script>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+	<![endif]-->
+
+
+<!-- InstanceBeginEditable name="MetaKeywordsDecscription" --> 
+    <meta name="Description" content="I have explained here on how recursive merge sort algorithm works along with C# source code.">
+    <meta name="Keywords" content="c#,merge,sort,algorithm,recursive">
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>C# Sorting Algorithm - Merge Sort Recursive</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+p.MsoNormal {
+margin:0in;
+margin-bottom:.0001pt;
+font-size:12.0pt;
+font-family:"Times New Roman","serif";
+}
+-->
+</style>
+<!-- InstanceEndEditable -->
+
+<script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shCore.js.download"></script>   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushJScript.js.download"></script>  
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushJava.js.download"></script>  
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushPython.js.download"></script>  
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushPhp.js.download"></script>  
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushCpp.js.download"></script>  
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushCSharp.js.download"></script>  
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushCss.js.download"></script>     
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushDiff.js.download"></script>     
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushPlain.js.download"></script>     
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushSql.js.download"></script>     
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushVb.js.download"></script>     
+   <script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/shBrushXml.js.download"></script>     
+<link href="./C# Sorting Algorithm - Merge Sort Recursive_files/shCore.css" rel="stylesheet" type="text/css"> 
+   <link href="./C# Sorting Algorithm - Merge Sort Recursive_files/shThemeDefault.css" rel="stylesheet" type="text/css"> 
+   <link href="./C# Sorting Algorithm - Merge Sort Recursive_files/shCoreDefault.css" rel="stylesheet" type="text/css"> 
+   <script type="text/javascript">
+	var stylesheet = document.createElement('link');
+	stylesheet.href = '/styles/sft.css';
+	stylesheet.rel = 'stylesheet';
+	stylesheet.type = 'text/css';
+	document.getElementsByTagName('head')[0].appendChild(stylesheet);
+</script><link href="./C# Sorting Algorithm - Merge Sort Recursive_files/sft.css" rel="stylesheet" type="text/css">
+
+
+    
+   <script type="text/javascript">SyntaxHighlighter.all()</script>
+       
+<script id="facebook-jssdk" async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/all.js.download"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+<body style="background-color:#FFFFFF">
+<div> <!-- header -->
+		<div class="border-bot">
+			<div class="main zerogrid">
+<table width="100%"><tbody><tr>
+<td width="100%" bgcolor="#0000FF">
+<!-- InstanceBeginEditable name="Issue" --> 
+<h1><font size="+1" color="#FFFFFF"><center>Software &amp; Finance </center>
+</font></h1>
+<!-- InstanceEndEditable -->
+</td>
+</tr></tbody></table>
+
+			            
+			</div>
+		</div>
+        
+        
+        
+
+
+
+		<div class="main">
+					<div class="col-full">
+                               
+   <!-- begin facebook tag  --> 
+                            <div id="facebook-tag">
+                               <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./C# Sorting Algorithm - Merge Sort Recursive_files/0sTQzbapM8j.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./C# Sorting Algorithm - Merge Sort Recursive_files/0sTQzbapM8j(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+                               <script type="text/javascript">
+                               window.fbAsyncInit = function() {
+                                  FB.init({
+                                     appId: '200130153406985', // App ID
+                                     channelUrl: document.location.href,
+                                     status: true, // check login status
+                                     cookie: true, // enable cookies to allow the server to access the session
+                                     oauth: true, // enable OAuth 2.0
+                                     xfbml: true  // parse XFBML
+                                  });
+                               };
+                               (function(d) {
+                                  var js, id = 'facebook-jssdk'; if (d.getElementById(id)) { return; }
+                                  js = d.createElement('script'); js.id = id; js.async = true;
+                                  js.src = "//connect.facebook.net/en_US/all.js";
+                                  d.getElementsByTagName('head')[0].appendChild(js);
+                               } (document));
+                            
+                               (function(d, s, id) {
+                                     var js, fjs = d.getElementsByTagName(s)[0];
+                                     if (d.getElementById(id)) return;
+                                     js = d.createElement(s); js.id = id;
+                                     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=200130153406985";
+                                     fjs.parentNode.insertBefore(js, fjs);
+                                  } (document, 'script', 'facebook-jssdk'));
+                               </script>
+   <!-- end facebook tag  -->							   
+<br>
+<!-- begin top adsense tag  --> 
+<div align="center" valign="middle">
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="topbaraddt" align="center" style="max-width:96%;"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>TopAdForDesktop('topbaraddt');</script>
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="topbaradmb" align="center" style="max-width:640px;width:96%;"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>TopAdForMobile('topbaradmb');</script>
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+    <div id="topbarmcmb" align="center" style="max-width:640px;width:96%;"></div>
+    <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+    <script>TopMCAdForMobile('topbarmcmb');</script>
+
+
+                            
+</div>
+                            <!-- end top adsense tag  --> 
+<br>
+              
+                    </div>
+                    
+             </div>
+
+        
+ 
+    
+</div> <!-- Header Content -->
+
+	
+
+
+<div id="master" class="mastercontainer">
+<div class="container zerogrid">
+
+
+  
+<div class="sidebar1">
+<!-- begin left adsense tag  --> 
+<p><br><br></p>
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="vbarleftdt" style="width:300px;max-width:100%;">	<!--  DTOP_SMALL_100 -->  <ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9285823372206627" data-ad-slot="4559476648" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource.html"></iframe></ins></ins></ins> 	<!--  DTOP_SMALL_200 -->  <ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9285823372206627" data-ad-slot="7512943043" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(1).html"></iframe></ins></ins></ins> </div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>VBarLeftAdForDesktop('vbarleftdt');</script>
+
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="vbarleftmc" style="width:300px;max-width:100%;"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>VBarLeftMCForDesktop('vbarleftmc');</script>
+
+	
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="middlebaradmb" style="max-width:640px;width:96%;"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>MiddleAdForMobile('middlebaradmb');</script>
+
+<!-- end left adsense tag  --> 
+<!-- end .sidebar1 --></div>
+
+
+<div class="content">
+
+
+              
+    <h1><!-- InstanceBeginEditable name="C# Title" --> C# - Sorting Algorithm - Merge Sort Recursive <!-- InstanceEndEditable -->
+      <hr width="100%"></h1><p style="margin-left:1px;margin-top:2px">   </p><div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/softwareandfinance" data-send="true" data-width="300px" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=200130153406985&amp;container_width=600&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsoftwareandfinance&amp;locale=en_US&amp;sdk=joey&amp;send=true&amp;show_faces=false&amp;width=300px"><span style="vertical-align: bottom; width: 300px; height: 28px;"><iframe name="f28a0e4ba938d24" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./C# Sorting Algorithm - Merge Sort Recursive_files/like.html" style="border: none; visibility: visible; width: 300px; height: 28px;" class=""></iframe></span></div><p></p>
+
+
+<div align="center">
+<br><br>
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="link1addt" align="center"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>Link1AdForDesktop('link1addt'); </script>
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="link2addt" align="center"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>Link2AdForDesktop('link2addt');</script>
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="link3addt" align="center"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>Link3AdForDesktop('link3addt');</script>
+
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="link1admb" align="center"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>Link1AdForMobile('link1admb');</script>
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="link2admb" align="center"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>Link2AdForMobile('link2admb');</script>
+
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="link3admb" align="center"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>Link3AdForMobile('link3admb');</script>
+
+
+<br><br>
+</div>
+
+
+
+    <!-- InstanceBeginEditable name="C# Source Code Explanation" -->
+    <p>&nbsp;</p>
+    <p>We often using sorting algorithm to sort numbers and strings. Also we have many   sorting algorithms. I have explained here on how merge sort algorithm works in recursive mode. </p>
+    <p>&nbsp;</p>
+    <p>The recusrive approach requires creatiion multi branch recursion until the elements are comparable by one iterm. The the merging happens with DoMerge function by taking three arguments - start, mid and right. </p>
+    <p>&nbsp;</p>
+    <p><a href="http://www.softwareandfinance.com/CSharp/Bubble_Sort.html">Click here for C# BubbleSort   Algorithm</a></p>
+    
+    <p><a href="http://www.softwareandfinance.com/CSharp/Insertion_Sort.html">Click here for C# InsertionSort   Algorithm</a></p>
+    
+    <p><a href="http://www.softwareandfinance.com/CSharp/MergeSort_Recursive.html">Click here for C# MergeSort Recursive  Algorithm</a>
+    
+    </p><p><a href="http://www.softwareandfinance.com/CSharp/MergeSort_Iterative.html">Click here for C# MergeSort   Iterative Algorithm</a>
+    
+    
+    </p><p><a href="http://www.softwareandfinance.com/CSharp/QuickSort_Recursive.html">Click here for C# QuickSort Recursive  Algorithm</a>
+    
+    </p><p><a href="http://www.softwareandfinance.com/CSharp/QuickSort_Iterative.html">Click here for C# QuickSort   Iterative Algorithm</a>    
+    <br>
+    </p>
+    
+    <p>&nbsp;</p>
+    <p>The complete program and test run output are given   below:</p>
+    <p>&nbsp;</p>
+    <!-- InstanceEndEditable -->   
+    <p>&nbsp;</p>
+
+<h2><cufon class="cufon cufon-canvas" alt="Source " style="width: 41px; height: 13px;"><canvas width="53" height="14" style="width: 53px; height: 14px; top: 0px; left: -1px;"></canvas><cufontext>Source </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Code" style="width: 30px; height: 13px;"><canvas width="38" height="14" style="width: 38px; height: 14px; top: 0px; left: -1px;"></canvas><cufontext>Code</cufontext></cufon></h2>
+<hr width="100%">
+<!-- InstanceBeginEditable name="C# Source Code" -->
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:blue; ">using</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> System;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:blue; ">using</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> System.Collections.Generic;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:blue; ">using</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> System.Text;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; color:blue; ">namespace</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "> CSharpSort</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">{</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp; <span style="color:blue; ">class</span> <span style="color:#2B91AF; ">Program</span></span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">static</span> <span style="color:blue; ">public</span> <span style="color:blue; ">void</span> DoMerge(<span style="color:blue; ">int</span> [] numbers, <span style="color:blue; ">int</span> left, <span style="color:blue; ">int</span> mid, <span style="color:blue; ">int</span> right)</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">int</span> [] temp = <span style="color:blue; ">new</span> <span style="color:blue; ">int</span>[25];</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span style="color:blue; ">int</span> i,  left_end, num_elements, tmp_pos;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; left_end = (mid - 1);</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tmp_pos = left;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; num_elements = (right - left + 1);</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">while</span> ((left &lt;= left_end) &amp;&amp; (mid &lt;= right))</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span style="color:blue; ">if</span> (numbers[left] &lt;= numbers[mid])</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; temp[tmp_pos++] =  numbers[left++];</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">else</span></span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; temp[tmp_pos++] =  numbers[mid++];</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">while</span> (left &lt;= left_end)</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; temp[tmp_pos++] =  numbers[left++];</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">while</span> (mid &lt;= right)</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; temp[tmp_pos++] =  numbers[mid++];</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">for</span> (i = 0; i &lt; num_elements; i++)</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numbers[right] = temp[right];</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; right--;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">static</span> <span style="color:blue; ">public</span> <span style="color:blue; ">void</span> MergeSort_Recursive(<span style="color:blue; ">int</span> [] numbers, <span style="color:blue; ">int</span> left, <span style="color:blue; ">int</span> right)</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">int</span> mid;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">if</span> (right &gt; left)</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mid = (right + left) / 2;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MergeSort_Recursive(numbers, left,  mid);</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MergeSort_Recursive(numbers, (mid +  1), right);</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DoMerge(numbers, left, (mid+1),  right);</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span>    </p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">static</span> <span style="color:blue; ">void</span> Main(<span style="color:blue; ">string</span>[] args)</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">int</span>[]  numbers = { 3, 8, 7, 5, 2, 1, 9, 6, 4 };</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">int</span> len = 9;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#2B91AF; ">Console</span>.WriteLine(<span style="color:#A31515; ">"MergeSort By Recursive Method"</span>);</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MergeSort_Recursive(numbers, 0, len  - 1);</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:blue; ">for</span> (<span style="color:blue; ">int</span> i = 0; i &lt; 9; i++)</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#2B91AF; ">Console</span>.WriteLine(numbers[i]);</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; "><span style="color:#2B91AF; ">Console</span>.WriteLine(numbers[i]);</span></p>
+<p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;background:#EEEEEE;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">&nbsp;&nbsp;&nbsp; }</span></p>
+    <span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">}</span><!-- InstanceEndEditable -->
+
+<h2><cufon class="cufon cufon-canvas" alt="Output" style="width: 42px; height: 13px;"><canvas width="51" height="14" style="width: 51px; height: 14px; top: 0px; left: -1px;"></canvas><cufontext>Output</cufontext></cufon></h2>
+<hr width="100%">
+<!-- InstanceBeginEditable name="C# Output" -->
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">MergeSort  By Recursive Method</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">1</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">2</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">3</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">4</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">5</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">6</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">7</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">8</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">9</span></p>
+    <p class="MsoNormal" style="text-autospace:none;"><span style="font-family:&#39;Courier New&#39;; font-size:10.0pt; ">Press any  key to continue . . .</span></p>
+<p>&nbsp;</p>
+    <p>&nbsp;</p>
+<!-- InstanceEndEditable --><br>
+<hr width="100%">
+
+<div id="SoftwareIndexContent"><div class="zerogrid content" align="left">
+<table><tbody><tr><td>
+<div class="col-1-4">
+        <div class="sidebar">
+			<ul>
+				<li>
+	<h2><a href="http://www.softwareandfinance.com/Software.html">Programming</a></h2>
+                    <ul>
+
+ <li><a href="http://www.softwareandfinance.com/Turbo_C/Index.html">Turbo C</a><br>
+  <a href="http://www.softwareandfinance.com/Turbo_C/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Turbo_C.jpg" width="100px" height="100px" alt="Turbo C Programs written by Kathir"></a>  
+  </li>
+
+<li><a href="http://www.softwareandfinance.com/Turbo_C/Graphics/Index.html">Turbo C</a><br>
+  <a href="http://www.softwareandfinance.com/Turbo_C/Graphics/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Turbo_C_Graphics.jpg" width="100px" height="100px" alt="Turbo C++ Graphics Programs written by Kathir"></a>  
+  </li>
+
+<li><a href="http://www.softwareandfinance.com/Turbo_CPP/Index.html">Turbo C++</a><br>
+  <a href="http://www.softwareandfinance.com/Turbo_CPP/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Turbo_CPP.jpg" width="100px" height="100px" alt="Turbo C++ Programs written by Kathir"></a>  
+  </li>
+  
+  <li><a href="http://www.softwareandfinance.com/Visual_CPP/Index.html">Visual C++</a><br>
+  <a href="http://www.softwareandfinance.com/Visual_CPP/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Visual_CPP.jpg" width="100px" height="100px" alt="Visual C++ Programs written by Kathir"></a>  
+  </li>
+  
+    <li><a href="http://www.softwareandfinance.com/CSharp/Index.html">C#</a><br>
+  <a href="http://www.softwareandfinance.com/CSharp/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/CSharp.jpg" width="100px" height="100px" alt="C# Programs written by Kathir"></a>  
+  </li>  
+  
+    
+					</ul>
+	</li></ul></div>
+</div>
+
+
+<div class="col-1-4">
+        <div class="sidebar">
+			<ul>
+				<li>
+	<h2><a href="http://www.softwareandfinance.com/Software.html">Programming</a></h2>
+                    <ul>
+
+
+  <li><a href="http://www.softwareandfinance.com/Java/Index.html">Java</a><br>
+  <a href="http://www.softwareandfinance.com/Java/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Java.jpg" width="100px" height="100px" alt="Java Programs written by Kathir"></a>  
+  </li> 
+
+
+  
+  <li><a href="http://www.softwareandfinance.com/Python/Index.html">Python</a><br>
+  <a href="http://www.softwareandfinance.com/Python/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Python.jpg" width="100px" height="100px" alt="Python Programs written by Kathir"></a>  
+  </li> 
+  
+  <li><a href="http://www.softwareandfinance.com/ASP.NET/Index.html">ASP.NET</a><br>
+  <a href="http://www.softwareandfinance.com/ASP.NET/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/ASPNET.jpg" width="100px" height="100px" alt="ASP.NET Programs written by Kathir"></a>
+  </li> 
+  
+  <li><a href="http://www.softwareandfinance.com/Php/Index.html">PHP</a><br>
+  <a href="http://www.softwareandfinance.com/Php/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/php.jpg" width="100px" height="100px" alt="PHP Programs written by Kathir"></a>  
+  </li> 
+  
+   <li><a href="http://www.softwareandfinance.com/JavaScript/Index.html">Java Script</a><br>
+  <a href="http://www.softwareandfinance.com/JavaScript/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/JavaScript.jpg" width="100px" height="100px" alt="Java Script written by Kathir"></a>  
+  </li> 
+  
+  
+  
+    
+					</ul>
+	</li></ul></div>
+</div>
+
+
+
+<div class="col-1-4">
+        <div class="sidebar">
+			<ul>
+				<li>
+	<h2><a href="http://www.softwareandfinance.com/Software.html">Programming</a></h2>
+                    <ul>
+
+
+  <li><a href="http://www.softwareandfinance.com/Database/Index.html">Database</a><br>
+  <a href="http://www.softwareandfinance.com/Database/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/database.jpg" width="100px" height="100px" alt="Database Samples written by Kathir"></a>  
+  </li> 
+
+  <li><a href="http://www.softwareandfinance.com/SoftwareTesting/SoftwareQualityAssurance/Index.html">Software Testing</a><br>
+  <a href="http://www.softwareandfinance.com/SoftwareTesting/SoftwareQualityAssurance/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/SoftwareTesting.jpg" width="100px" height="100px" alt="Software Testing by Kathir"></a>  
+  </li> 
+  
+  <li><a href="http://www.softwareandfinance.com/FAQ_Interview.html">Interview</a><br>
+  <a href="http://www.softwareandfinance.com/FAQ_Interview.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/InterviewQuestions.jpg" width="100px" height="100px" alt="Interview Questions written by Kathir"></a>  
+  </li> 
+  
+  <li><a href="http://www.softwareandfinance.com/apps/Index.html">Apps</a><br>
+  <a href="http://www.softwareandfinance.com/apps/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/apps.jpg" width="100px" height="100px" alt="Apps development by Kathir"></a>
+  </li> 
+  
+  
+    
+					</ul>
+	</li></ul></div>
+</div>
+
+<div class="col-1-4">
+        <div class="sidebar">
+			<ul>
+				<li>
+	<h2><a href="http://www.softwareandfinance.com/Software.html">Programming</a></h2>
+                    <ul>
+
+
+ <li><a href="http://www.softwareandfinance.com/VSNET_40/Index.html">Visual Studio.NET</a><br>
+  <a href="http://www.softwareandfinance.com/VSNET_40/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/VSNET.jpg" width="100px" height="100px" alt="Visual Studio .NET Programs written by Kathir"></a>  
+  </li>
+
+
+  <li><a href="http://www.softwareandfinance.com/VB/Index.html">Visual Basic</a><br>
+  <a href="http://www.softwareandfinance.com/VB/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/VB.jpg" width="100px" height="100px" alt="Visual Basic Programs written by Kathir"></a>  
+  </li> 
+
+  <li><a href="http://www.softwareandfinance.com/VSNET_40/Silverlight.html">Silverlight</a><br>
+  <a href="http://www.softwareandfinance.com/VSNET_40/Silverlight.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Silverlight.jpg" width="100px" height="100px" alt="Silverlight Programs written by Kathir"></a>  
+  </li>     
+					</ul>
+	</li></ul></div>
+</div>
+</td></tr></tbody></table>
+</div>
+
+<hr width="100%">
+
+<div class="zerogrid content" align="left">
+
+<table><tbody><tr><td>
+<div class="col-1-4">
+        <div class="sidebar">
+			<ul>
+				<li>
+	<h2><a href="http://www.ktastro.com/Astrology/Index.html">Vedic Astrology </a></h2>
+                    <ul>
+
+ <li><a href="http://www.ktastro.com/Astrology/Daily/Index.html">Daily Predictions</a><br>
+  <a href="http://www.ktastro.com/Astrology/Daily/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/daily_predictions.jpg" width="100px" height="100px" alt="Daily Predictions by KT Astrologer"></a>  
+  </li>
+
+<li><a href="http://www.ktastro.com/Tools/NatalChart.php">Free Natal Chart</a><br>
+  <a href="http://www.ktastro.com/Tools/NatalChart.php"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/free_natal_chart.jpg" width="100px" height="100px" alt="Free Birth / Natal Chart from www.ktastro.com"></a>  
+  </li>
+
+  
+  <li>
+  <a href="http://www.ktastro.com/Astrology/Monthly/MonthlyPredictions.html">Monthly Prediction</a>
+  <br>
+  <a href="http://www.ktastro.com/Astrology/Monthly/2015_October/Rasi_Palan.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/2015_October_Predictions.jpg" width="100" height="50" alt="October 2015 Rasi Palan"></a>
+  <br>
+  <a href="http://www.ktastro.com/Astrology/Monthly/2015_September/Rasi_Palan.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/2015_September_Predictions.jpg" width="100" height="50" alt="September 2015 Rasi Palan"></a>
+  <br>
+  </li>
+  
+  
+  <li>
+  <a href="http://www.ktastro.com/Astrology/NewYear_2015/2015_MoonSign_Yearly_Prediction.html">2015 Yealy </a>
+  <br>
+  <a href="http://www.ktastro.com/Astrology/NewYear_2015/2015_MoonSign_Yearly_Prediction.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/2015_New_Year_Logo.jpg" width="100px" height="100px" alt="New Year 2015 Predictions Moon Sign  by KT Astrologer"></a>
+  </li>
+  
+  
+  <li>
+  <a href="http://www.ktastro.com/Astrology/Sani_Peyarchi_02Nov_2014_25Oct_2017/Saturn_Transit_Predictions.html">Saturn Transit</a>
+  <br>
+  <a href="http://www.ktastro.com/Astrology/Sani_Peyarchi_02Nov_2014_25Oct_2017/Saturn_Transit_Predictions.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/2014_2017_Saturn_Transit_Predictions.jpg" width="100px" height="100px" alt="Saturn Transit Predictions 2014 - 2017 by KT Astrologer"></a>
+  </li>
+  
+  <li>
+  <a href="http://www.ktastro.com/Astrology/Guru_Peyarchi_18June2014_13July2015/Jupiter_Transit_Predictions.html">Juipter Transit </a>
+  <a href="http://www.ktastro.com/Astrology/Guru_Peyarchi_18June2014_13July2015/Jupiter_Transit_Predictions.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Jupiter_Transit_2014_Index.jpg" width="100px" height="100px" alt="Jupiter Transit 2014 - 2015 Predictions by KT Astrologer"></a>
+  </li>
+  
+  <li>
+  <a href="http://www.ktastro.com/Astrology/Rahu_Ketu_2014_2016/Index.html">Rahu / Ketu </a>
+  <br>
+   <a href="http://www.ktastro.com/Astrology/Rahu_Ketu_2014_2016/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/2014_2016_Rahu_Transit_Predictions.jpg" width="100px" height="100px" alt="Rahu Ketu Transit Predictions 2014 - 2017 by KT Astrologer"></a>
+  </li>
+  
+
+  <li><a href="http://www.ktastro.com/Astrology/Western/Mercury_Retrograde.html">Mercury Rx</a><br>
+  <a href="http://www.ktastro.com/Astrology/Western/Mercury_Retrograde.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/mercury_retrograde.jpg" width="100px" height="100px" alt="Mercury Retrograde Predictions"></a>
+  </li>
+    
+  <li><a href="http://www.ktastro.com/KT_Astrologer.php">KT Astrologer</a><br>
+  <a href="http://www.ktastro.com/KT_Astrologer.php"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/contact_kt_astrologer.jpg" width="100px" height="100px" alt="KT Astrologer Contact Information"></a>
+  </li>
+<li><a href="http://www.ktastro.com/Astrology/Questions/index.php">Free Consultation</a><br>
+<a href="http://www.ktastro.com/Astrology/Questions/index.php"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/kt_astrologer_forum.jpg" width="100px" height="100px" alt="KT Astrologer Free Consultation Forum"></a>
+</li>  
+  
+    
+					</ul>
+	</li></ul></div>
+</div>
+
+<div class="col-1-4">
+
+<div class="sidebar">
+			<ul>
+				<li>
+                                
+	<h2><a href="http://www.ktastro.com/kundali_matching/Index.php">Horoscope Match</a></h2>
+   <ul>
+   <li>
+<a href="http://www.ktastro.com/kundali_matching/Index.php">Kundali Matching</a>
+        <br>
+        <a href="http://www.ktastro.com/kundali_matching/Index.php"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/wedding.jpg" width="100px" height="100px" alt="Horoscope Matching in vedic Astrology by KT Astrologer"></a>   
+   </li>
+   
+   <li>
+   <a href="http://www.ktastro.com/Astrology/Marriage_Matching/Love_Astrology.html">Find Soul Mate</a>
+        <br>
+        <a href="http://www.ktastro.com/Astrology/Marriage_Matching/Love_Astrology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/love_symbol.jpg" width="100px" height="100px" alt="Love in Vedic Astrology"></a>
+   </li>
+   
+   
+   <li><a href="http://www.ktastro.com/Astrology/Marriage_Matching/Star_Matching_Compatibility_Table.html">Star Match Table</a>
+<br>
+<a href="http://www.ktastro.com/Astrology/Marriage_Matching/Star_Matching_Compatibility_Table.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/star_match_table.jpg" width="100px" height="100px" alt="Star Match Table"></a>
+      </li><li><a href="http://www.ktastro.com/Remedies/Dosha_Nakshatra_Remedies.html">Dosha Nakshatra? </a>
+<br>
+<a href="http://www.ktastro.com/Remedies/Dosha_Nakshatra_Remedies.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/dosha_nakshatra.jpg" width="100px" height="100px" alt="Dosha Nakshatra"></a>
+
+      </li><li><a href="http://www.ktastro.com/Remedies/Remedies_Manglik_Chevvai_Mars_dosha.html">Manglik Dosham? </a>
+<br>
+<a href="http://www.ktastro.com/Remedies/Remedies_Manglik_Chevvai_Mars_dosha.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Manglik_Chevvai_Mars_dosha.jpg" width="100px" height="100px" alt="Manglik Dosha Chevvai Mars Kuja"></a>
+  </li>
+
+  <li><a href="http://www.ktastro.com/Remedies/index.html">Remedies</a>
+<br>
+<a href="http://www.ktastro.com/Remedies/index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/astro_remedies.jpg" width="100px" height="100px" alt="Astrology Remedies by KT Astrologer"></a></li>
+
+<li><a href="http://www.ktastro.com/Remedies/Remedies_For_Sayana_Dosham_In_Vedic_Astrology.html">Marital Problems</a><br>
+<a href="http://www.ktastro.com/Remedies/Remedies_For_Sayana_Dosham_In_Vedic_Astrology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Marital_Problems_1.jpg" alt="Sayana Dosha" width="100px" height="100px"></a></li>
+
+      <li><a href="http://www.ktastro.com/Remedies/Remedies_For_Puthira_Dosham_In_Vedic_Astrology.html">Puthira Dosham</a><br>
+<a href="http://www.ktastro.com/Remedies/Remedies_For_Puthira_Dosham_In_Vedic_Astrology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Puthra_Dosham_1.jpg" alt="Puthira Dosha" width="100px" height="100px"></a></li>
+
+  <li><a href="http://www.ktastro.com/Astrology/News/Index.html">Astrology News</a><br>
+  <a href="http://www.ktastro.com/Astrology/News/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/astro_breaking_news.jpg" width="100px" height="100px" alt="Astrology Breaking News"></a>
+  </li>
+  
+    <li><a href="http://www.ktastro.com/Astrology/Western/index.html">Western Astro</a><br>
+  <a href="http://www.ktastro.com/Astrology/Western/index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/western_astro.jpg" width="100px" height="100px" alt="Western Astrology by KT Astrologer"></a>
+  </li>
+
+   </ul>             
+  </li>
+  
+  
+  
+  </ul></div>
+</div>
+
+
+<div class="col-1-4">
+  
+  <div class="sidebar">
+			<ul>
+				<li>
+                                
+	<h2><a href="http://www.ktastro.com/Astrology/Finance/Index.html">Finance Astro</a></h2>
+   <ul>
+   
+   <li><a href="http://www.ktastro.com/Astrology/Finance/Stock_Price_Movement_Financial_Astrology.html">Stock Price</a>
+<br>
+
+ <a href="http://www.ktastro.com//Astrology/Finance/Stock_Price_Movement_Financial_Astrology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Stock_price_forecast.jpg" alt="Stock Price Forecast Finance Astrology KT Astrologer" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/Finance/Right_Time_For_Investment.html">Investment</a>
+<br>
+ <a href="http://www.ktastro.com/Astrology/Finance/Right_Time_For_Investment.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/right_time_investment.jpg" alt="Right time for investments in Financial Astrology by KT Astrologer" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/Finance/Partnership_Business_Financial_Astrology.html">Partnership</a>
+<br>
+ <a href="http://www.ktastro.com/Astrology/Finance/Partnership_Business_Financial_Astrology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/partnership.jpg" alt="Partnership Business Financial Astrology by KT Astrologer" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/Finance/Start_Business_Financial_Astrology.html">Small Business</a>
+<br>
+
+ <a href="http://www.ktastro.com/Astrology/Finance/Start_Business_Financial_Astrology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/small_business.jpg" alt="Starting Business Financial Astrology KT Astrologer" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Bill_Gates.html">Bill Gates</a>
+<br>
+
+ <a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Bill_Gates.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/bill_gates.jpg" alt="Bill Gates Birth Chart Financial Astrology KT Astrologer" width="100px" height="100px"></a></li>
+
+      <li><a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Rajinikanth.html">Rajinikanth</a>
+<br>
+
+ <a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Rajinikanth.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/rajinikanth.jpg" alt="Rajinikanth Birth Chart by KT Astrologer" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Shahrukh_Khan.html">Shahrukh Khan</a>
+<br>
+
+ <a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Shahrukh_Khan.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Shahrukh_Khan.jpg" alt="Shahrukh Khan Birth Chart by KT Astrologer" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Aishwarya_Rai.html">Aishwarya Rai</a>
+<br>
+
+ <a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Aishwarya_Rai.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Aishwarya_Rai.jpg" alt="Aishwarya Rai Birth Chart by KT Astrologer" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Amitabh_Bachchan.html">Amitabh Bachchan</a>
+<br>
+
+ <a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Amitabh_Bachchan.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Amitabh_Bachchan.jpg" alt="Amitabh Bachchan Birth Chart by KT Astrologer" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Salman_Khan.html">Salman Khan</a>
+<br>
+
+ <a href="http://www.ktastro.com/Astrology/Celebs/BirthChart_Salman_Khan.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Salman_Khan.jpg" alt="Salman Khan Birth Chart by KT Astrologer" width="100px" height="100px"></a></li>
+
+   </ul>             
+  </li></ul></div>
+</div>
+
+<div class="col-1-4">  
+  
+  <div class="sidebar">
+			<ul>
+				<li>
+                                
+	<h2><a href="http://www.ktastro.com/Astrology/Lessions/Index.html"><font size="-2">Learn Astrology</font></a></h2>
+   <ul>
+   
+   <li><a href="http://www.ktastro.com/Astrology/lessions/Index.html">Lessions</a>
+<br>
+<a href="http://www.ktastro.com/Astrology/lessions/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/LearnVedicAstrology.jpg" alt="Learn Vedic Astrology" width="100px" height="100px"></a></li>
+      
+    <li><a href="http://www.ktastro.com/Tools/Panchangam_redirector.php">Daily Panchang</a><br>
+  <a href="http://www.ktastro.com/Tools/Panchangam_redirector.php"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/daily_panchang.jpg" width="100px" height="100px" alt="Daily Vakya, KP, Gowri Panchang by KT Astrologer"></a>  
+  </li>
+  
+  <li><a href="http://www.ktastro.com/Tools/planet_positions_redirector.php">Planet Positions</a><br>
+  <a href="http://www.ktastro.com/Tools/planet_positions_redirector.php"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/current_planet_positions.jpg" width="100px" height="100px" alt="Current / Live Planet Positions for your location"></a>  
+  </li>  
+  
+    
+      <li><a href="http://www.ktastro.com/Astrology/lessions/MahaDasha.html">Maha Dasha</a>
+<br>
+<a href="http://www.ktastro.com/Astrology/lessions/MahaDasha.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/MahaDasha.jpg" alt="Learn Lession Maha Dasa" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/lessions/Moon_Sign_Calculator.html">Your Moon Sign </a>
+<br>
+<a href="http://www.ktastro.com/Astrology/lessions/Moon_Sign_Calculator.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Moon_Sign_Calculator.jpg" alt="Moon Sign Calculator" width="100px" height="100px"></a></li>
+
+<li>
+      <a href="http://www.ktastro.com/Remedies/Immigration_Propspects_Green_Card_Vedic_Astrology.html">Green Card?</a>
+<br>
+<a href="http://www.ktastro.com/Remedies/Immigration_Propspects_Green_Card_Vedic_Astrology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Green_Card.jpg" alt="Green Card Astrology Immigration" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Astrology/Lessions/Sun_Moon_Signs.html">Sun/Moon Signs</a>
+<br>
+<a href="http://www.ktastro.com/Astrology/Lessions/Sun_Moon_Signs.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Sun_Moon_Signs.jpg" alt="Sun and Moon Sign difference" width="100px" height="100px"></a></li>
+
+<li>      <a href="http://www.ktastro.com/Astrology/Lessions/27_Stars.html">27 Stars </a>
+<br>
+<a href="http://www.ktastro.com/Astrology/Lessions/27_Stars.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/27Stars.jpg" alt="27 star and 108 padas" width="100px" height="100px"></a></li>
+   
+        <li><a href="http://www.ktastro.com/Astrology/Lessions/Venus_Mahadasha.html">Venus Mahadasa </a>
+<br>
+<a href="http://www.ktastro.com/Astrology/Lessions/Venus_Mahadasha.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/venus_maha_dasa.jpg" width="100px" height="100px" alt="Venus (sukra) Maha Dasa "></a></li>
+  
+    <li><a href="http://www.ktastro.com/KT_Astrologer.php">KT Astrologer</a><br>
+  <a href="http://www.ktastro.com/KT_Astrologer.php"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/contact_kt_astrologer.jpg" width="100px" height="100px" alt="KT Astrologer Contact Information"></a>
+  </li>
+  
+   </ul>             
+  </li></ul></div>
+                  
+</div>
+
+</td></tr></tbody></table>
+</div>
+
+
+
+
+<hr width="100%">
+
+
+<div class="zerogrid content" align="left">
+
+<hr width="100%">
+ 
+<table><tbody><tr><td>
+
+
+<div class="col-1-4">
+
+<div class="sidebar">
+			<ul>
+				<li>
+                                
+	<h2><a href="http://www.ktastro.com/Remedies/Index.html">Remedies</a></h2>
+   <ul>
+
+<li><a href="http://www.ktastro.com/Remedies/Remedies_For_Kala_Sarpa_Dosha.html">KalaSarpa Dosha</a>
+<br>
+
+ <a href="http://www.ktastro.com/Remedies/Remedies_For_Kala_Sarpa_Dosha.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Kala_Sarpa_Dosha_1.jpg" alt="Kala Sarpa Dosha" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Remedies/Remedies_Kanda_Rajju_Sirasu_Rajju_Dosha.html">Rajju Dosham</a>
+<br>
+
+ <a href="http://www.ktastro.com/Remedies/Remedies_Kanda_Rajju_Sirasu_Rajju_Dosha.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Kanda_Rajju_Sirasu_Rajju_Dosha_1.jpg" alt="Kanda Rajju Sirasu Dosha" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Remedies/Remedies_For_Sayana_Dosham_In_Vedic_Astrology.html">Marital Problems</a><br>
+<a href="http://www.ktastro.com/Remedies/Remedies_For_Sayana_Dosham_In_Vedic_Astrology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Marital_Problems_1.jpg" alt="Sayana Dosha" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Remedies/Remedies_For_Puthira_Dosham_In_Vedic_Astrology.html">Puthira Dosham</a><br>
+<a href="http://www.ktastro.com/Remedies/Remedies_For_Puthira_Dosham_In_Vedic_Astrology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Puthra_Dosham_1.jpg" alt="Puthira Dosha" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Remedies/Remedies_For_9_Planets.html">Remedies/Gemstone</a><br>
+<a href="http://www.ktastro.com/Remedies/Remedies_For_9_Planets.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Remedies_9_Planets_1.jpg" alt="Remedies for 9 planets" width="100px" height="100px"></a></li>
+
+   </ul>             
+  </li></ul></div>
+</div>
+
+
+
+<div class="col-1-4">
+
+<div class="sidebar">
+			<ul>
+				<li>
+                                
+	<h2><a href="http://www.ktastro.com/Numerology/Index.html">Numerology</a></h2>
+   <ul>
+
+<li><a href="http://www.ktastro.com/Numerology/Index.html">All about Numbers</a>
+<br>
+
+ <a href="http://www.ktastro.com/Numerology/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Numerology_Index.jpg" alt="Numerology by KT Astrologer" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Numerology/Calculate_Name_Number_in_Numerology.html">Name Number</a>
+<br>
+
+ <a href="http://www.ktastro.com/Numerology/Calculate_Name_Number_in_Numerology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Numerology_Name_Number.jpg" alt="Calculate Name Number in Numerology" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Numerology/Calculate_LifePathNumber_Birthday_Number.html">Life Path Number</a>
+<br>
+
+ <a href="http://www.ktastro.com/Numerology/Calculate_LifePathNumber_Birthday_Number.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Numerology_Life_Path_Number.jpg" alt="Calculate Life Path Number" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Numerology/2014_NewYear/2014_Numerology_Predictions_Forecast.html">2014 Predictions</a>
+<br>
+
+ <a href="http://www.ktastro.com/Numerology/2014_NewYear/2014_Numerology_Predictions_Forecast.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Numerology_2014_Predictions.jpg" alt="Numerology 2014 New Year Predictions" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Numerology/Naming_ChangeName_based_on_Numerology.html">Name Change?</a>
+<br>
+
+ <a href="http://www.ktastro.com/Numerology/Naming_ChangeName_based_on_Numerology.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Numerology_Name_Change.jpg" alt="Numerology Name Change" width="100px" height="100px"></a></li>
+
+   </ul>             
+  </li></ul></div>
+</div>
+
+
+<div class="col-1-4">
+
+<div class="sidebar">
+			<ul>
+				<li>
+                                
+	<h2><a href="http://www.ktastro.com/Vasthu/Index.html">Vasthu</a></h2>
+   <ul>
+
+      <li><a href="http://www.ktastro.com/Vasthu/Index.html">Vasthu Sastra</a>
+<br>
+
+ <a href="http://www.ktastro.com/Vasthu/Index.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Vasthu_Sastra_Bhagawan.jpg" alt="Vasthu Bhagawan" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Vasthu/Entrance.html">Entrance</a>
+<br>
+
+ <a href="http://www.ktastro.com/Vasthu/Entrance.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Vasthu_Sastra_Entrance.jpg" alt="Vasthi Sastra Entrance" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Vasthu/Puja_room.html">Puja Room</a>
+<br>
+
+ <a href="http://www.ktastro.com/Vasthu/Puja_room.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Vasthu_Sastra_Puja.jpg" alt="Vasthu Sastra Puja" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Vasthu/Kitchen.html">Kitchen</a>
+<br>
+
+ <a href="http://www.ktastro.com/Vasthu/Kitchen.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Vasthu_Sastra_Kitchen.jpg" alt="Vasthu Sastra Kitchen" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Vasthu/Dining.html">Dining</a>
+<br>
+
+ <a href="http://www.ktastro.com/Vasthu/Dining.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Vasthu_Sastra_Dining.jpg" alt="Vasthu Sastra Dining" width="100px" height="100px"></a></li>
+
+   </ul>             
+  </li></ul></div>
+</div>
+
+<div class="col-1-4">
+
+<div class="sidebar">
+			<ul>
+				<li>
+                                
+	<h2><a href="http://www.ktastro.com/Spiritual/Index.html">Spiritual</a></h2>
+   <ul>
+
+      <li><a href="http://www.ktastro.com/Spiritual/Ramana_Maharishi.html">Ramana Maharishi</a>
+<br>
+
+ <a href="http://www.ktastro.com/Spiritual/Ramana_Maharishi.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Ramana_Maharishi_1.jpg" alt="Ramana Maharishi" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Spiritual/Vethathiri_Maharishi.html">Vethathiri</a><br>
+<a href="http://www.ktastro.com/Spiritual/Vethathiri_Maharishi.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Vethathiri_Maharishi_1.jpg" alt="Vethathiri Maharishi" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Spiritual/Vallalar_Ramalinga_Swamigal.html">Vallalar</a><br>
+<a href="http://www.ktastro.com/Spiritual/Vallalar_Ramalinga_Swamigal.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Vallalar_1.jpg" alt="Vallalar" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Spiritual/Shirdi_Sai_Baba.html">Shirdi Sai Baba</a><br>
+<a href="http://www.ktastro.com/Spiritual/Shirdi_Sai_Baba.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Shirdi_Sai_Baba_1.jpg" alt="Shirdi Sai Baba" width="100px" height="100px"></a></li>
+      <li><a href="http://www.ktastro.com/Spiritual/Siddhar_Bogar.html">Siddhar Bogar</a><br>
+<a href="http://www.ktastro.com/Spiritual/Siddhar_Bogar.html"><img src="./C# Sorting Algorithm - Merge Sort Recursive_files/Siddhar_1.jpg" alt="Siddhar Bogar" width="100px" height="100px"></a></li>
+
+   </ul>             
+  </li></ul></div>
+</div>
+
+</td></tr></tbody></table>
+</div>
+
+<hr width="100%">
+
+</div>         
+<div>
+<table bgcolor="#FFFFFF" align="left" width="90%" border="0" bordercolor="#000000"><tbody>
+<tr><td> 
+<p style="margin-left:1px;margin-top:2px">   </p><div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/softwareandfinance" data-send="true" data-width="300px" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=200130153406985&amp;container_width=534&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsoftwareandfinance&amp;locale=en_US&amp;sdk=joey&amp;send=true&amp;show_faces=false&amp;width=300px"><span style="vertical-align: bottom; width: 300px; height: 28px;"><iframe name="f3f1e03c007a96" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./C# Sorting Algorithm - Merge Sort Recursive_files/like(1).html" style="border: none; visibility: visible; width: 300px; height: 28px;" class=""></iframe></span></div><p></p>
+</td></tr>
+</tbody></table>
+</div>
+<br><br><hr width="100%"><br><br>
+<div align="center">
+<form action="http://www.softwareandfinance.com/search.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-9285823372206627:1982217445">
+    <input type="hidden" name="cof" value="FORID:10">
+    <input type="hidden" name="ie" value="UTF-8">
+    <input type="text" name="q" size="50" placeholder="Custom Search" style="border: 1px solid rgb(126, 157, 185); padding: 2px; background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px;">
+    <input type="submit" name="sa" value="Search">
+  </div>
+<input name="siteurl" type="hidden" value="www.softwareandfinance.com/CSharp/MergeSort_Recursive.html"><input name="ref" type="hidden" value="www.google.co.za/"><input name="ss" type="hidden" value=""></form>
+
+<script type="text/javascript" src="./C# Sorting Algorithm - Merge Sort Recursive_files/brand"></script>    
+    </div><br><br>
+<!-- begin facebook comments  --> 
+<div id="fbcomments">
+   <div id="mydiv"><div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-href="http://www.softwareandfinance.com/CSharp/MergeSort_Recursive.html" data-num-posts="10" data-width="100%" fb-xfbml-state="rendered"><span style="height: 663px;"><iframe id="f72a8adda763c" name="f1c534634e16f8c" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./C# Sorting Algorithm - Merge Sort Recursive_files/comments.html" style="border: none; overflow: hidden; height: 663px; width: 100%;"></iframe></span></div></div>
+	<script type="text/JavaScript">
+	   var mydiv = document.getElementById("mydiv");
+	   mydiv.innerHTML = "<div class='fb-comments' data-href='" + document.location.href + "' data-num-posts='10' data-width='100%'></div>"
+	   FB.XFBML.parse(mydiv); 
+	</script>
+</div>
+<!-- end facebook comments  --> 
+<br>
+<hr width="100%">
+<br>
+</div>  
+
+<div class="sidebar2">
+<!-- begin right adsense tag  --> 
+<p><br><br></p>
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="vbarrightdt" style="max-width:100%;">	<!--  DTOP_SMALL_500 -->  <ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9285823372206627" data-ad-slot="7373342246" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(2).html"></iframe></ins></ins></ins> 	<!--  DTOP_SMALL_600 -->  <ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9285823372206627" data-ad-slot="1326808640" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(3).html"></iframe></ins></ins></ins> </div>
+<script>VBarRightAdForDesktop('vbarrightdt');</script>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="vbarrightdtmc" style="max-width:100%;">	<!--  DTOP_SMALL_700 -->  <ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9285823372206627" data-ad-slot="4280275047" data-adsbygoogle-status="done"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_4_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(4).html"></iframe></ins></ins></ins> 	<!--  DTOP_SMALL_800 -->  <ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-9285823372206627" data-ad-slot="7233741445" data-adsbygoogle-status="done"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_5_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(5).html"></iframe></ins></ins></ins> </div>
+<script>VBarRightMCForDesktop('vbarrightdtmc');</script>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+
+
+
+<script async="" src="./C# Sorting Algorithm - Merge Sort Recursive_files/adsbygoogle.js.download"></script>
+<div id="leftbaradmb" style="max-width:640px;width:96%;"></div>
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+<script>BottomBarAdForMobile('leftbaradmb');</script>
+
+
+<p><br><br></p>
+<!-- end right adsense tag  --> 
+</div>
+
+
+
+   <!-- end .container --></div>
+<div class="footer" align="center">
+
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-16898088-3";
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16898088-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<a href="http://www.softwareandfinance.com/Disclaimer.html">
+<p><strong><font color="#0000FF"><u>Disclaimer: </u></font></strong> <font color="#0000FF"><u>This web site is for educational and informational purposes only. Click here to read the Disclaimer.</u></font></p></a>
+
+    <p>Content copyright 2010-2015. <a href="http://www.betelgeusellc.com/">Betelgeuse LLC.</a> All rights reserved.</p>
+    <!-- end .footer --></div>
+</div>
+
+<!-- InstanceEnd -->
+</div><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(6).html"></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(7).html"></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(8).html"></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(9).html"></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(10).html"></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./C# Sorting Algorithm - Merge Sort Recursive_files/saved_resource(11).html"></iframe></body></html>

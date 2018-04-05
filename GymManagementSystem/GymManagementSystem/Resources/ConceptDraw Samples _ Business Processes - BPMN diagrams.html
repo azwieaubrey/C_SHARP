@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)http://www.conceptdraw.com/samples/business-process-diagrams-business-process-model-notation -->
+<html dir="ltr" lang="en-US" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ConceptDraw Samples | Business Processes - BPMN diagrams </title>
+<!--<base href="http://www.conceptdraw.com/samples/">--><base href=".">
+<meta name="keywords" content="BPMN, business, process, modelling, model, diagram - ">
+<meta property="og:image" content="http://www.conceptdraw.com/resources/images/solutions-screens/business/Collaboration_Diagram_Public_Process_for_Cab_Booking.png">
+<meta property="twitter:image" content="http://www.conceptdraw.com/resources/images/solutions-screens/business/Collaboration_Diagram_Public_Process_for_Cab_Booking.png">
+<meta name="description" content="The examples of business process diagrams (BPMN 2.0) are drawn using the ConceptDraw PRO. - ">
+<meta name="robots" content="index,follow">
+<!--<base href="http://sp.conceptdraw.ua:5678/"/>-->
+
+<!-- <link rel="stylesheet" type="text/css" media="all" href="resource/styles/typography.css"> -->
+<link rel="stylesheet" type="text/css" media="all" href="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/normalize.css">
+<link rel="stylesheet" type="text/css" media="all" href="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/layout.css">
+<link rel="stylesheet" type="text/css" media="all" href="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/common.css">
+<link rel="stylesheet" type="text/css" media="all" href="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/content.css">
+<link rel="stylesheet" type="text/css" media="all" href="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/new-samples.css">
+<!--<link rel="stylesheet" type="text/css" media="all" href="styles/tv.css">-->
+<link rel="stylesheet" type="text/css" media="all" href="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/jquery-ui-1.8.21.custom.css">
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="../styles/ie.css" />
+<![endif]-->
+<link rel="icon" type="image/png" href="http://www.conceptdraw.com/samples/cd-favicon.png">
+
+    <link rel="canonical" href="http://www.conceptdraw.com/samples/business-process-diagrams-business-process-model-notation">
+    
+<link rel="stylesheet" href="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/video-js.css" type="text/css" media="screen" title="Video JS" charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="all" href="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/content-media-queries.css">
+
+<script type="text/javascript" async="" src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/ga.js.download"></script><script type="text/javascript" async="" src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/ga.js.download"></script><script type="text/javascript" src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/jquery.min.js.download"></script>
+<script type="text/javascript" src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/jquery.cycle.all.js.download"></script>
+<script type="text/javascript" src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/jquery-ui-1.8.21.custom.min.js.download"></script>
+<script type="text/javascript" src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/jsapi"></script>
+<script src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/velocity.min.js.download"></script>
+<!--    <script type="text/javascript" src="resource/js/AnimOnScroll.js"></script>-->
+
+<script type="text/javascript">
+    google.load("swfobject", "2.1");
+</script><script src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/swfobject.js.download" type="text/javascript"></script>
+<script type="text/javascript" src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/video-player2.js.download"></script>
+<script type="text/javascript" src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/main.js.download"></script>
+<!--<script type="text/javascript" src="resources/js/main.js" ></script>-->
+
+<script type="text/javascript">
+        /* <![CDATA[ */
+        jQuery(document).ready(function ($) {
+
+            var href = true;
+
+            $(".my-conceptdraw").click(function () {
+
+                if ($("#SignIn").length == 0)   href = false;
+                else                            href = true;
+
+            });
+
+            $(".dropped").click(function () {
+                href = true;
+            });
+
+            $(".dropdown").mouseenter(function () {
+                $(".dropped").clearQueue();
+                $(".my-conceptdraw").addClass("pushed");
+                $(".dropped").show();
+            });
+            $(".dropdown").mouseleave(function () {
+                $(".dropped").delay(500).slideUp();
+                $(".my-conceptdraw").removeClass("pushed");
+            });
+            $(".dropdown").click(function () {
+                return href;
+            });
+
+            $("#SignOut").click(function () {
+                $.ajax({
+                    url: '../../scripts/logout.php'
+                    , type: 'POST'
+                    , data: 'd=' + $("#SignOut").attr('href')
+                    , success: function (data) {
+                        if (data == 'out')  $("#SignOut").parent().html("<div style=\"width: 100%;background: #eee;color: #000;text-align: center;\">Signed Out</div>");
+                        setTimeout('pagereload()', 500);
+
+                    }
+                    , error: function (data) {
+                        alert('error:' + data);
+                    }
+                });
+            });
+        });
+
+        function pagereload() {
+            location.href = $(location).attr('href') + "?logout";
+        }
+        /* ]]> */
+    </script><script>
+    (function(e){"use strict";function r(t,n){this.opts=e.extend({handleWheel:!0,handleScrollbar:!0,handleKeys:!0,scrollEventKeys:[32,33,34,35,36,37,38,39,40]},n);this.$container=t;this.$document=e(document);this.lockToScrollPos=[0,0];this.disable()}var t,n;n=r.prototype;n.disable=function(){var e=this;e.opts.handleWheel&&e.$container.bind("mousewheel.disablescroll DOMMouseScroll.disablescroll touchmove.disablescroll",e._handleWheel);if(e.opts.handleScrollbar){e.lockToScrollPos=[e.$container.scrollLeft(),e.$container.scrollTop()];e.$container.bind("scroll.disablescroll",function(){e._handleScrollbar.call(e)})}e.opts.handleKeys&&e.$document.bind("keydown.disablescroll",function(t){e._handleKeydown.call(e,t)})};n.undo=function(){var e=this;e.$container.unbind(".disablescroll");e.opts.handleKeys&&e.$document.unbind(".disablescroll")};n._handleWheel=function(e){e.preventDefault()};n._handleScrollbar=function(){this.$container.scrollLeft(this.lockToScrollPos[0]);this.$container.scrollTop(this.lockToScrollPos[1])};n._handleKeydown=function(e){for(var t=0;t<this.opts.scrollEventKeys.length;t++)if(e.keyCode===this.opts.scrollEventKeys[t]){e.preventDefault();return}};e.fn.disablescroll=function(e){!t&&(typeof e=="object"||!e)&&(t=new r(this,e));t&&typeof e=="undefined"?t.disable():t&&t[e]&&t[e].call(t)};window.UserScrollDisabler=r})(jQuery);
+    (function($) {
+        $.fn.hasScrollBar = function() {
+            return this.get(0).scrollHeight > this.outerHeight();
+        }
+    })(jQuery);
+    function ishoveredbyclass(cls) {
+        var n = document.querySelector(":hover");
+        if (n.classList.contains(cls)) return true;
+        var nn;
+        while (n) {
+            nn = n;
+            n = nn.querySelector(":hover");
+            if (nn.classList.contains(cls)) return true;
+        }
+        return false;
+    }
+    $(document).ready(function highlightMenuItem(){
+        var currPage = window.location.pathname;
+        if (currPage.indexOf('project-management-online') > -1) {
+            $(".menu-center a[href*='project-management-online']").addClass('selected');
+        } else {
+        currPage = currPage.substring(0, currPage.indexOf("/", currPage.indexOf("/") + 1));
+            $(".menu-center a[href*='"+currPage+"']").first().addClass('selected');
+        }
+    });
+
+    /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
+     * Build: http://modernizr.com/download/#-touch
+     */
+    ;window.Modernizr=function(a,b,c){function v(a){i.cssText=a}function w(a,b){return v(l.join(a+";")+(b||""))}function x(a,b){return typeof a===b}function y(a,b){return!!~(""+a).indexOf(b)}function z(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:x(f,"function")?f.bind(d||b):f}return!1}var d="2.8.3",e={},f=b.documentElement,g="modernizr",h=b.createElement(g),i=h.style,j,k={}.toString,l=" -webkit- -moz- -o- -ms- ".split(" "),m={},n={},o={},p=[],q=p.slice,r,s=function(a,c,d,e){var h,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:g+(d+1),l.appendChild(j);return h=["&#173;",'<style id="s',g,'">',a,"</style>"].join(""),l.id=g,(m?l:n).innerHTML+=h,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=f.style.overflow,f.style.overflow="hidden",f.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),f.style.overflow=k),!!i},t={}.hasOwnProperty,u;!x(t,"undefined")&&!x(t.call,"undefined")?u=function(a,b){return t.call(a,b)}:u=function(a,b){return b in a&&x(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=q.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(q.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(q.call(arguments)))};return e}),m.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:s(["@media (",l.join("touch-enabled),("),g,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c};for(var A in m)u(m,A)&&(r=A.toLowerCase(),e[r]=m[A](),p.push((e[r]?"":"no-")+r));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)u(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof enableClasses!="undefined"&&enableClasses&&(f.className+=" "+(b?"":"no-")+a),e[a]=b}return e},v(""),h=j=null,e._version=d,e._prefixes=l,e.testStyles=s,e}(this,this.document);
+
+</script><style>
+    @font-face {
+        font-family: 'open_sans_light';
+        font-weight: 200;
+        font-style: normal;
+
+        src: url('/styles/fonts/OpenSans-Light-webfont.eot');
+        src: url('/styles/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-Light-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-Light-webfont.svg#open_sansLight') format('svg');
+    }
+    @font-face {
+        font-family: 'open_sans_regular';
+        font-weight: 400;
+        font-style: normal;
+
+        src: url('/styles/fonts/OpenSans-Regular-webfont.eot');
+        src: url('/styles/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-Regular-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    }
+    @font-face {
+        font-family: 'open_sans_semibold';
+        font-weight: 600;
+        font-style: normal;
+
+        src: url('/styles/fonts/OpenSans-Semibold-webfont.eot');
+        src: url('/styles/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    }
+    @font-face {
+        font-family: 'open_sans_ExtraBold';
+        font-weight: 600;
+        font-style: normal;
+
+        src: url('/styles/fonts/OpenSans-ExtraBold-webfont.eot');
+        src: url('/styles/fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('/styles/fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('/styles/fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('/styles/fonts/OpenSans-ExtraBold-webfont.svg#open_sansExtraBold') format('svg');
+    }
+    *{
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;
+    }
+    body {
+        margin: 0;
+    }
+    .menu {
+        font-size: 10px;
+        width: 100%;
+        position: relative;
+        height: 40px;
+        background-color: #fff;
+        border-bottom: 1px solid silver;
+    }
+    .menu * ,
+    .menu-full *,
+    .profile * {
+        text-decoration: none;
+        font-family: open_sans_regular, 'Open Sans', open_sans, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    }
+    .menu, .menu div,
+    .menu-full, .menu-full div,
+    .profile, .profile div{
+        float: none;
+    }
+    .menu-full > .left > .row > .col a {
+        font-family: open_sans_light, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    .menu a,
+    .menu-full a,
+    .profile a {
+        border-bottom: none 0;
+    }
+    .menu > .menu-left,
+    .menu > .menu-center,
+    .menu > .menu-right {
+        display: inline-block;
+        position: absolute;
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .menu > .menu-left {
+        text-align: left;
+        left: 0;
+        right: auto;
+        z-index: 100000000;
+    }
+    .menu > .menu-center {
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 50000000;
+    }
+    .menu > .menu-right {
+        text-align: right;
+        right: 0;
+        left: auto;
+        z-index: 100000000;
+    }
+    .menu > .menu-left a,
+    .menu > .menu-center a,
+    .menu > .menu-right a {
+        margin: 2em;
+    }
+    .menu > .menu-left > .logo > a,
+    .menu > .menu-right a {
+        color: #e8594d;
+    }
+    .menu > .menu-left > .logo > a:hover {
+        text-decoration: none;
+    }
+    .menu > .menu-left > .logo > a {
+        font-family: open_sans_semibold, open_sans_regular, open_sans, 'Open Sans', sans-serif;
+    }
+
+
+    .menu > .menu-center > a:nth-last-child(2) {
+        margin-left: .75em;
+    }
+    .menu > .menu-center > a:last-child{
+        border: 1px #84A5D7 solid;
+        border-radius: 6px;
+        height: 28px;
+        line-height: 2;
+        font-size: 13px;
+        width: 110px;
+        color: #84A5D7;
+        padding: 0;
+    }
+
+
+    .menu > .menu-center > a {
+        color:  #4a4a4a;
+        line-height: 32px;
+        border-top: 4px solid transparent;
+        height: 40px;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100px;
+        margin: 0 2em;
+
+    }
+
+
+    .menu > .menu-center > a:hover:not(:last-child) {
+        border-top: 4px solid  #e8594d;
+        text-decoration: none;
+    }
+    .menu > .menu-center > a:last-child:hover {
+        color: #6B6B6B;
+        border: 1px solid #6B6B6B;
+        text-decoration: none;
+    }
+    .menu-center > a.selected:not(:last-child) {
+        border-top: 4px solid #e8594d !important;
+    }
+    .menu-center > a.selected:last-child {
+        background: white;
+    }
+    .menu > .menu-right div.signin,
+    .menu > .menu-right div.search,
+    .menu > .menu-right > .username {
+        float: right;
+    }
+    .menu > .menu-right > .username {
+        width: 240px;
+        text-overflow: ellipsis;
+
+    }
+    .menu > .menu-right > .username > a {
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    div.search:hover, div.search:hover * {
+        cursor: pointer;
+    }
+
+    .menu > .menu-right div.search input[type=text] {
+        border: none;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #e8594d;
+        font-size: 14px;
+        height: 32px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 2em;
+        padding-left: 3em;
+        border: 1px solid transparent;
+        -webkit-appearance: none;
+    }
+    .menu > .menu-right div.search input[type=text]:-webkit-autofill:focus{
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
+        -webkit-text-fill-color: #e8594d;
+        background-color: white !important;
+
+    }
+    .menu > .menu-right div.search input[type=text]:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
+        -webkit-text-fill-color: #e8594d;
+        background-color: white !important;
+    }
+    .menu > .menu-right div.search input[type=text]:focus{
+        outline: none;
+        border: 1px solid #e8594d;
+        cursor: auto;
+    }
+
+    .menu > .menu-right div.search input[type=text]::-webkit-input-placeholder {
+        color: #e8594d;
+    }
+
+    .menu > .menu-right div.search input[type=text]:-moz-placeholder { /* Firefox 18- */
+        color: #e8594d;
+    }
+
+    .menu > .menu-right div.search input[type=text]::-moz-placeholder {  /* Firefox 19+ */
+        color: #e8594d;
+    }
+
+    .menu > .menu-right div.search input[type=text]:-ms-input-placeholder {
+        color: #e8594d;
+    }
+    .menu > .menu-right div.search {
+        height: 32px;
+        margin-left: 2em;
+        background: url(/include_2015/imgs/Search_top.png) no-repeat .8em;
+        background-size: 17px;
+        margin-right: 0;
+        margin-top: .25em;
+        line-height: 32px;
+    }
+    .menu > .menu-right a {
+        font-family: open_sans_semibold, open_sans_regular, open_sans, 'Open Sans', sans-serif;
+    }
+    .menu > .menu-right > .username > a {
+        font-family: open_sans_regular, open_sans, 'Open Sans', sans-serif;
+        padding: 0 20px;
+        -webkit-background-size: 20px auto;
+        background-size: 20px auto;
+        line-height: 40px;
+        height: 40px;
+        /*box-sizing: border-box;*/
+        margin: 0;
+        display: block;
+        text-align: center;
+        position: relative;
+        white-space: nowrap;
+    }
+    .menu > .menu-right > .username > a:hover {
+        text-decoration: none;
+    }
+    .menu > .menu-right > .username > a > img {
+        width: 15px;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        vertical-align: text-top;
+        margin-right: 1.5em;
+    }
+    .menu > .menu-right > .username > a.active {
+        background-color: #d8d8d8;
+    }
+    .menu > .menu-right.active {
+        position: fixed;
+        z-index: 900000000;
+    }
+    /*.menu > .menu-right.active .username{*/
+        /*width: auto;*/
+    /*}*/
+    .menu > .menu-right.active div.search{
+        display: none;
+    }
+    .menu > .menu-right.active > .username > a > .close {
+        display: block;
+    }
+    .menu > .menu-right > .username > a > .close {
+        display: none;
+        height: 32px;
+        width: 32px;
+        background: url(/include_2015/imgs/CloseGrey.png) no-repeat center;
+        background-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: .5em;
+        left: auto;
+        margin: auto;
+    }
+    .menu > .menu-left > .burger {
+        background: url(/include_2015/imgs/Icon.png) no-repeat center;
+        background-size: 25px 14px;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        float: left;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .menu > .menu-left > .logo {
+        display: inline-block;
+    }
+    .menu > .menu-right div.search input[type=text]:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+   span.search-clear {
+        color: transparent;
+        font-family: open_sans_light, 'Open Sans', sans-serif;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        left: -25px;
+        font-size: 12pt;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+    }
+    .menu > .menu-right .search input[type=text]:focus + span {
+        color: #e8594d;
+        cursor: pointer;
+    }
+    @media only screen and (max-width:1410px) {
+        .menu > .menu-right > .username {
+            width: 190px;
+
+        }
+        .menu > .menu-right > .username > a {
+            width: 150px;
+        }
+    }
+
+    @media only screen and (max-width: 1890px) {
+
+
+        .menu > .menu-center > a:last-child {
+              /*margin-left: 0;*/
+              /*text-align: start;*/
+            width: 125px;
+          }
+        .menu > .menu-center > a{
+            margin: 0;
+            padding: 0 1.5em;
+            width: auto;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 1630px) {
+        .menu > .menu-center {
+            left: 30%;
+            right: auto;
+        }
+
+        .menu > .menu-right div.search input[type=text],
+        .menu > .menu-right div.search {
+            width: 125px;
+        }
+
+        span.search-clear {
+            left: -12px;
+            top: -32px;
+        }
+    }
+    @media only screen and (max-width:1340px) {
+        .menu > .menu-center {
+            left: 20%;
+            right: auto;
+        }
+    }
+    @media only screen and (max-width:1166px) {
+        .menu > .menu-center {
+            display: none;
+        }
+        .menu > .menu-right div.search,
+        .menu > .menu-right div.search input[type=text] {
+            width: 160px;
+        }
+    }
+    @media only screen and (max-width:570px) {
+        .menu > .menu-right div.search,
+        .menu > .menu-right div.search input[type=text] {
+            display: none;
+        }
+        .menu-full > .left > .row > .col > .title, .menu-full > .left > .row > .col > .title a {
+              margin-top: 24px;
+          }
+    }
+    @media only screen and (max-width:400px) {
+        .menu > .menu-right > .username > a {
+            color: transparent;
+            font-size: 0;
+            vertical-align: middle;
+            padding: 0;
+            background-position: center;
+            text-align: right;
+            width: 90%;
+        }
+        .menu > .menu-right div.search{
+            display: none;
+        }
+        .menu > .menu-right > .username > a > img {
+            vertical-align: middle;
+        }
+
+    }
+    @media only screen and (max-width:200px) {
+        .menu > .menu-left > .logo {
+            display: none;
+        }
+
+    }
+</style></head>
+
+
+    
+
+
+
+
+
+<body class="solution-park " id="solution-park" indsliders=""><div class="menu">
+    <div class="menu-left">
+        <div class="burger" onclick="menuToggle()"></div>
+        <div class="logo"><a href="http://www.conceptdraw.com/">ConceptDraw</a></div>
+    </div>
+    <div class="menu-center">
+        <a href="http://www.conceptdraw.com/products">Products</a>
+        <a href="http://www.conceptdraw.com/products/project-management-online">Services</a>
+        <a href="http://www.conceptdraw.com/solution-park">Solutions</a>
+        <a href="http://www.conceptdraw.com/samples" class="selected">Samples</a>
+        <a href="https://my.conceptdraw.com/buy/">Buy</a>
+        <a href="http://www.conceptdraw.com/helpdesk/visio-replace">Replace Visio</a>
+    </div>
+    <div class="menu-right">
+
+                <div class="signin"><a href="https://my.conceptdraw.com/registration/login.php">Sign In</a></div>
+                <div class="search">
+            <form method="get" action="http://www.conceptdraw.com/search.php" id="searchbox_000893448112670316043:ckg3jdpoqts">
+                <input type="hidden" name="cx" value="000893448112670316043:ckg3jdpoqts">
+                <input type="hidden" name="cof" value="FORID:11">
+                <input type="hidden" name="sa" value="Search">
+                <input type="text" autocomplete="on" placeholder="Search" name="q" id="header_search" href="" onclick="javascript:if(this.phSet)this.value=&#39;&#39;" onkeydown="javascript:if ( event.keyCode == 27 ) this.value=&#39;&#39;">
+                <span class="search-clear">✕</span>
+            </form>
+
+        </div>
+    </div>
+</div>
+<style>
+    .menu-full {
+        font-size: 10px;
+        display: none;
+        background-color: rgba(86, 86, 86, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        z-index: 900000000;
+        /*height: 100vh;*/
+        height: 100vh;
+        overflow: auto;
+    }
+    .menu-full > .top {
+        margin-bottom: 2em;
+    }
+    .menu-full > .top > .logo > a {
+        font-size: 14px;
+        font-family: open_sans_semibold, open_sans, 'Open Sans', sans-serif;
+        color: #fff;
+        line-height: 32px;
+    }
+    .menu-full > .top > .logo > a:hover {
+        text-decoration: none;
+    }
+    .menu-full > .top > * {
+        display: inline-block;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .menu-full > .top > .close {
+        height: 32px;
+        width: 32px;
+        margin-right: 2.25em;
+        margin-left: 1.5em;
+        background: url(/include_2015/imgs/Close.png) no-repeat center;
+        background-size: 20px;
+        float: left;
+        cursor: pointer;
+
+    }
+    .menu-full > .left {
+        width: 70%;
+        width: calc(75% - 2em);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 2em;
+        float: left;
+    }
+    .menu-full > .left > .row {
+        display: block;
+        margin-bottom: 6em;
+    }
+    .menu-full > .left > .row > .col {
+        padding-left: 5em;
+        display: inline-block;
+        vertical-align: top;
+        width: 24%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu-full > .left > .row > .col a {
+        color: #fff;
+        font-size: 14px;
+        line-height: 2.4;
+        padding: .15em 0;
+        display: inline-block;
+    }
+    .menu-full > .left > .row > .col a:hover {
+        text-decoration: none;
+    }
+    .menu-full > .left > .row > .col > .item {
+        border-bottom: 1px solid #acacac;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .menu-full > .left > .row > .col > .item:first-child {
+        border-bottom: none;
+    }
+    .menu-full > .left > .row > .col > .item:hover::after {
+        content: '';
+        position: absolute;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-bottom: 6px solid #acacac;
+    }
+    .menu-full > .left > .row > .col > .title,
+    .menu-full > .left > .row > .col > .title a{
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 24px;
+        font-family:  open_sans_regular,open_sans, 'Open Sans', sans-serif;
+        font-weight: 400;
+        line-height: 36px;
+        cursor: default;
+        width: auto;
+        padding: 0;
+    }
+    .menu-full > .left > .row > .col > .title a{
+        margin-bottom: 0;
+        border-bottom: 1px solid transparent;
+        line-height: 24px;
+    }
+    .menu-full {
+        vertical-align: top;
+    }
+    .menu-full > div.right {
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 25%;
+        border-left: 1px solid #acacac;
+        vertical-align: top;
+        padding-left: 5%;
+        padding-top: 0;
+        height: 75%;
+        height: calc(100% - 120px);
+        max-height: 859px;
+        float: none !important;
+        right: 0;
+        margin-top: 0;
+        text-align: left;
+    }
+    .menu-full > .right .title,
+    .menu-full > .right .top {
+        padding: 0;
+        margin-bottom: 0;
+        line-height: 18px;
+        width: auto;
+    }
+    .menu-full > .right .title a {
+        font-size: 18px;
+        /*font-weight: 400 !important;*/
+        /*font-family: open_sans_regular,open_sans,  'Open Sans',sans-serif;*/
+        line-height: 48px;
+        color: #fff;
+        height: 48px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-right: .2em;
+    }
+    .menu-full > .right .title a:hover,
+    .menu-full > .left > .row > .col > .title a:hover{
+        border-bottom: 1px solid #acacac;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .menu_overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 80000000;
+        background-color: #000;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    @media only screen and (max-width:1024px) {
+        .menu-full > .left > .row > .col a{
+            line-height: 1.45;
+            padding: .65em 0;
+        }
+    }
+    @media only screen and (max-width:1000px) {
+        .menu-full > .left > .row > .col {
+            width: 49%;
+        }
+        .menu-full > .left > .row > .col {
+            margin-bottom: 2em;
+        }
+    }
+    @media only screen and (max-width:600px) {
+        .menu-full > .left > .row > .col {
+            width: 100%;
+        }
+        .menu-full > .left > .row > .col {
+            margin-bottom: 2em;
+        }
+    }
+    @media only screen and (max-width:550px) {
+        .menu-full > .top > .logo {
+            display: none;
+        }
+    }
+    @media only screen and (max-width:500px) {
+        .menu-full > .left,
+        .menu-full > div.right {
+            display: block;
+            float: none !important;
+        }
+        .menu-full > div.right {
+            border-left: none;
+            width: 100%;
+            padding-left: 7em;
+            text-align: left;
+        }
+
+    }
+</style>
+    <script>
+        $('.menu-full').height(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+        $(window).bind('resize', function() {
+            $('.menu-full').height(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+        });
+        var menuToggle = function() {
+            $('.menu-full').height(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+            if ($('.menu-full').css('display')=='none') {
+                $('.menu-full').fadeIn(200);
+                $('.menu_overlay').fadeIn(200);
+                if (Modernizr.touch) {
+                    $('body,html').css({overflow:'hidden', height:'100%'});
+                } else {
+                    $('.menu-full').hover(
+                        function () {
+                            if ($(this).hasScrollBar()) {
+                                $(document).disablescroll('undo');
+                            }
+                        }, function () {
+                            $(document).disablescroll();
+                        });
+                    $(document).disablescroll();
+                }
+
+                $('.menu-full').bind('click', function(e) {
+                    if ((e.target.classList.contains('item') || e.target.tagName=='A' || e.target.tagName=='INPUT' || e.target.classList.contains('search-clear'))==false) {
+                        menuToggle();
+                    }
+                    else if((e.target.classList.contains('search-clear'))==true){
+                        $('.search-clear').prev('input').val("");
+                    }
+                });
+
+                $('.menu_overlay').bind('click', menuToggle);
+                $('input[type=text]').focusin(function(){
+                    $(document).disablescroll('undo');
+                });
+                $('input[type=text]').focusout(function(){
+                    $(document).disablescroll();
+                });
+            } else {
+                $('.menu-full').fadeOut(200);
+                $('.menu_overlay').fadeOut(200);
+                if (Modernizr.touch) {
+                    $('body,html').css({overflow:'auto', height:'auto'});
+                } else {
+                    $('.menu-full').unbind('mouseenter mouseleave');
+                    $(document).disablescroll('undo');
+                }
+                $('.menu-full').unbind('click');
+                $('.menu_overlay').unbind('click');
+            }
+        }
+
+        $('.search-clear').click(function(e){
+            e.preventDefault();
+            $('.search-clear').prev('input').val("");
+        });
+    </script>
+<div class="menu-full">
+    <div class="top">
+        <div class="close" onclick="menuToggle()"></div>
+        <div class="logo"><a href="http://www.conceptdraw.com/">ConceptDraw</a></div>
+
+    </div>
+    <div class="left">
+        <div class="row">
+            <div class="col">
+                <div class="title"><a href="http://www.conceptdraw.com/products/">Products</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/products/office">ConceptDraw OFFICE&nbsp;4</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/products/drawing-tool/">ConceptDraw PRO&nbsp;11</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/products/mind-map-software/">ConceptDraw MINDMAP&nbsp;9</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/products/project-management-software/">ConceptDraw PROJECT&nbsp;8</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/products/project-management-online">ConceptDraw PLAN</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/products/store">ConceptDraw STORE</a></div>
+            </div>
+            <div class="col">
+                <div class="title"><a href="http://www.conceptdraw.com/solution-park/">Solution Park</a> </div>
+                <div class="item"><a href="http://www.conceptdraw.com/solution-park/building">Building Plans</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/solution-park/business-infographics">Business Infographics</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/solution-park/business_process">Business Processes</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/solution-park/computer-networks">Computer and Networks</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/solution-park/software">Software Development</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/solution-park/management">Management</a></div>
+
+
+            </div>
+            <div class="col">
+                <div class="title"><a href="http://www.conceptdraw.com/video/">Video Room</a> </div>
+                <div class="item"><a href="http://www.conceptdraw.com/video/products">Products Video</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/video/solutions">Solution Park Video</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/video/helpdesk">HelpDesk Video</a></div>
+            </div>
+            <div class="col">
+                <div class="title"><a href="http://www.conceptdraw.com/samples/about-samples">Samples</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/samples/building-plans-floor-plans">Floor Plans</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/samples/business-infographics-management">Management Infographics</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/samples/business-process-diagrams-business-process-model-notation">Business Process Diagrams</a></div>
+
+                <div class="item"><a href="http://www.conceptdraw.com/samples/computer-networks-cloud-computing-diagrams">Cloud Computing Diagrams</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/samples/business-process-diagrams-flow-charts">Cross-Functional Flowcharts</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/samples/business-processes-workflow-diagrams">Business Process Workflow Diagrams</a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="title"><a href="http://helpdesk.conceptdraw.com/ticket.php">Support</a></div>
+                <div class="item"><a href="http://helpdesk.conceptdraw.com/ticket.php">Technical Support</a></div>
+                <div class="item"><a href="https://my.conceptdraw.com/buy/upgrade.php#about">Upgrade Request</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/helpdesk/content/visio-conversion">Visio File Conversion</a></div>
+            </div>
+            <div class="col">
+                <div class="title"><a href="https://my.conceptdraw.com/buy/catalog.php">Ready To Buy</a></div>
+                <div class="item"><a href="https://my.conceptdraw.com/buy/catalog.php">Buy Online</a></div>
+                <div class="item"><a href="https://my.conceptdraw.com/buy/resellers.php">Reseller Partners</a></div>
+            </div>
+            <div class="col">
+                <div class="title"><a href="http://www.conceptdraw.com/products/contact-us">CS Odessa</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/products/contact-us">Contact Us</a></div>
+                <div class="item"><a href="http://www.conceptdraw.com/products/CS-Odessa-Identity">CS Odessa Identity</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <div class="title"><a href="http://www.conceptdraw.com/news/list">News</a></div>
+            <div class="title"><a href="http://www.conceptdraw.com/helpdesk/home">HelpDesk</a></div>
+        </div>
+        <div class="bottom">
+            <div class="title"><a href="https://my.conceptdraw.com/buy">Buy</a></div>
+        </div>
+    </div>
+</div>
+<div class="menu_overlay"></div>
+
+<style>.dwnd_cddz{display:none;opacity:0;}</style>
+<!--<a class="button_trial sign-up-button" id="account" href="/GetFree21Trial.php">Sign&nbsp;Up&nbsp;for<br>Free&nbsp;Trial<br>21 day</a>-->
+    <style>
+        .main {
+            margin-left: 0 !important;
+            width: 100% !important;
+        }
+    </style>
+    <title>ConceptDraw Samples | Business Processes - BPMN diagrams </title>
+<div class="main subpage " id="business-process-diagrams-business-process-model-notation"><h3 style="font-size: 14px;margin:3em 0 2em 6em;color:#a3a3a3;font-weight:100;"><a href="http://www.conceptdraw.com/samples">Samples</a> <span style="color:#666">/</span> <a href="http://www.conceptdraw.com/samples/Business_Processes">Business Processes</a> <span style="color:#666">/</span> <span style="color:#000">Business Process Diagram</span></h3><h1>Business Process Diagram</h1><div class="smp-desc"><p>Samples of business process diagrams (BPMN 2.0) are created with ConceptDraw PRO diagramming and vector drawing software enhanced with Business Process Diagram solution from ConceptDraw Solution Park. The ConceptDraw PRO offers you a variety of diagramming tools, and solutions from the Solution Park provide diagram templates and libraries of ready-made charts and shapes for quick and simple drawing professional-quality business diagrams. ConceptDraw PRO provides export of vector graphic multipage documents into multiple file formats: vector graphics (SVG, EMF, EPS), bitmap graphics (PNG, JPEG, GIF, BMP, TIFF), web documents (HTML, PDF), PowerPoint presentations (PPT), Adobe Flash (SWF).</p></div><div class="section-block block1col" style="width:100%">
+        
+                            <div class="bl_wrapper" id="blw_1345" style="width:100%">
+                                            <h2>Tutorials and Solutions:</h2>
+                    <p> Video Tutorials: <a href="http://www.conceptdraw.com/video/solutions.php?t=90">ConceptDraw Solution Park</a></p>
+<p><a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram</a><a href="http://www.conceptdraw.com/solution-park/business-process">Business Process</a><a href="http://www.conceptdraw.com/products/drawing-tool/">ConceptDraw PRO</a></p>
+                </div>
+                                            <div class="bl_wrapper" id="blw_1304" style="width:100%">
+                                            <h2>Sample 1: Business Process Diagram (BPMN 2.0) — Application Handling and Invoicing Process</h2>
+                    <p>Business Process Model and Notation 2.0 (BPMN 2.0) Diagram sample: Application handling and invoicing process.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park. </p>
+<div style="margin-top: -213px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Application-Handling-And-Invoicing-Collaboration-BPMN-2.0-Diag.png" width="1100" height="786"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_1305" style="width:100%">
+                                            <h2>Sample 2: Business Process Diagram (BPMN 2.0) — Trouble Ticket System</h2>
+                    <p>Business Process Model and Notation 2.0 (BPMN 2.0) Diagram sample: Trouble ticket system.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park. </p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Trouble-Ticket-System-BPMN-2.0-Diagram.png" width="1100" height="679"></div>
+
+                </div>
+                                            <div class="bl_wrapper" id="blw_1306" style="width:100%">
+                                            <h2>Sample 3: Business Process Diagram (BPMN 2.0) — Taxi Reservation Choreography</h2>
+                    <p>Business Process Model and Notation 2.0 (BPMN 2.0) Diagram sample: Taxi reservation choreography.</p>
+<p> This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park. </p>
+<div style="margin-top: -213px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/BUSINESS-PROCESS-DIAGRAMS-BPMN-Taxi-Reservation-Choreography-Diagram.png" width="550" height="757"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_1307" style="width:100%">
+                                            <h2>Sample 4: Conversation BPMN 2.0 Diagram — Advertising Creation Process</h2>
+                    <p>Business Process Model and Notation 2.0 (BPMN 2.0) Diagram sample: Advertising creation process.</p>
+<p> This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park. </p>
+<div style="margin-top: -213px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Advertising-Creation-Process-Conversation-BPMN-2.0-Diagram.png" width="1100" height="755"></div>
+
+                </div>
+                                            <div class="bl_wrapper" id="blw_1308" style="width:100%">
+                                            <h2>Sample 5: Business Process Diagram (BPMN 2.0) — Cab Booking Process</h2>
+                    <p>Business Process Model and Notation 2.0 (BPMN 2.0) Diagram sample: Cab booking process.</p>
+<p> This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park. </p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Public-Process-For-Cab-Booking-Collaboration-BPMN-2.0-Diagram.png" width="1100" height="726"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_1309" style="width:100%">
+                                            <h2>Sample 6: Business Process Diagram (BPMN 1.2) — Generate Mobile Content</h2>
+                    <p>Business Process Model and Notation 1.2 (BPMN 1.2) Diagram sample: Generate mobile content. </p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park. </p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/BUSINESS-PROCESS-DIAGRAMS-BPMN-Generate-Mobile-Content.png" width="550" height="600"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_1311" style="width:100%">
+                                            <h2>Sample 7: Business Process Diagram (BPMN 1.2) — Taxi Service Order Procedure</h2>
+                    <p>Business Process Model and Notation 1.2 (BPMN 1.2) Diagram sample: Taxi Service Order Procedure. </p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park. </p>
+<div style="margin-top: -213px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Taxi-Service-Order-Procedure-BPMN-1.2-Diagram.png" width="1100" height="743"></div>
+
+                </div>
+                                            <div class="bl_wrapper" id="blw_1312" style="width:100%">
+                                            <h2>Sample 8: Business Process Modelling Diagram (BPMN 1.2)</h2>
+                    <p>Business Process Model and Notation 1.2 (BPMN 1.2) Diagram sample.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park. </p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/BUSINESS-PROCESS-DIAGRAMS-BPMN-Business-Process-Modelling-Diagram.png" width="550" height="790"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_1313" style="width:100%">
+                                            <h2>Sample 9: Business Process Diagram (BPMN 2.0) — Booking Process</h2>
+                    <p>Business Process Model and Notation 2.0 (BPMN 2.0) Diagram sample: Booking Process.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Booking-Process-BPMN-2.0-Diagram52.png" width="1100" height="499"></div>
+
+                </div>
+                                            <div class="bl_wrapper" id="blw_1314" style="width:100%">
+                                            <h2>Sample 10: Business Process Diagram (BPMN 2.0) — Logistics Choreography</h2>
+                    <p>Business Process Model and Notation 2.0 (BPMN 2.0) Diagram sample: Logistics Choreography.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Logistics-Choreography-BPMN-2.0-Diagram61.png" width="1100" height="656"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_1315" style="width:100%">
+                                            <h2>Sample 11: Business Process Diagram (BPMN 2.0) — Order Process</h2>
+                    <p>Business Process Model and Notation 2.0 (BPMN 2.0) Diagram sample: Order Process.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Order-Process-BPMN-2.0-Diagram17.png" width="1100" height="502"></div>
+
+                </div>
+                                            <div class="bl_wrapper" id="blw_3032" style="width:100%">
+                                            <h2>Sample 12: Business Process Diagram — A Process with Normal Flow</h2>
+                    <p>Business Process Diagram sample: A Process with Normal Flow.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -175px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-A-Process-With-Normal-Flow.png" width="1100" height="656"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_3033" style="width:100%">
+                                            <h2>Sample 13: Business Process Diagram — Discussion Cycle Process</h2>
+                    <p>Business Process Diagram sample: Discussion Cycle Process.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -175px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Discussion-Cycle-Process.png" width="1100" height="566"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_3034" style="width:100%">
+                                            <h2>Sample 14: Conversation BPMN 2.0 Diagram — Recruitment and Training</h2>
+                    <p>Business Process Model and Notation 2.0 (BPMN 2.0) Diagram sample: Recruitment and Training.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Franchisee-Recruitment-And-Training-Conversation-BPMN-2.0-Diag.png" width="1100" height="732"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_3035" style="width:100%">
+                                            <h2>Sample 15: Business Process Diagram — Group in Active Plenary</h2>
+                    <p>Business Process Diagram sample: Group in Active Plenary.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -175px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Group-In-Active-Plenary.png" width="1100" height="714"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_3036" style="width:100%">
+                                            <h2>Sample 16: Business Process Diagram (BPMN 1.2) — Hiring Process</h2>
+                    <p>Business Process Model and Notation 1.2 (BPMN 1.2) Diagram  sample: Hiring Process.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Hiring-Process-BPMN-1.2-Diagram.png" width="1100" height="774"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_3037" style="width:100%">
+                                            <h2>Sample 17: Business Process Diagram — Quotation BPMN Example</h2>
+                    <p>Business Process Diagram sample: Quotation BPMN Example.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -175px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Quotation-BPMN-Example.png" width="1100" height="568"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_3038" style="width:100%">
+                                            <h2>Sample 18: Business Process Diagram (BPMN 1.2) — Taxi Order Process</h2>
+                    <p>Business Process Model and Notation 1.2 (BPMN 1.2) Diagram  sample: Taxi Order Process.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -194px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Taxi-Order-Process-BPMN-1.2-Diagram.png" width="1100" height="628"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_3039" style="width:100%">
+                                            <h2>Sample 19: Business Process Diagram — Votes Collection Process</h2>
+                    <p>Business Process Diagram sample: Votes Collection Process.</p>
+<p>This example is created using ConceptDraw PRO diagramming software enhanced with <a href="http://www.conceptdraw.com/solution-park/business-process-diagram">Business Process Diagram solution</a> from ConceptDraw Solution Park.</p>
+<div style="margin-top: -175px;"> <img src="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/Business-Process-Diagrams-Votes-Collection-Process.png" width="1100" height="922"></div>
+                </div>
+                                            <div class="bl_wrapper" id="blw_1316" style="width:100%">
+                    <hr class="grid_10_alpha">
+<br>
+<p>
+    <small>All samples are copyrighted CS Odessa's.</small>
+</p>
+<p>
+    <small>Usage of them is covered by Creative Commons “Attribution Non-Commercial No Derivatives” License.</small>
+</p>
+<p>
+    <small>The text you can find at: <a href="http://creativecommons.org/licenses/by-nc-nd/3.0">http://creativecommons.org/licenses/by-nc-nd/3.0</a></small>
+</p>
+                </div>
+                                                    <!--  <h1>Sorry</h1>
+          <p>This section is empty!</p>-->
+            </div>
+
+    
+    <div class="gallery_main" id="gallery_big">
+        <div class="gal_close"></div>
+        <div class="gp_prev"></div>
+        <div class="gallery" id="mgprv">
+
+        </div>
+        <div class="gp_next"></div>
+        <div class="paging_main">
+            <ul class="paging nav">
+            </ul>
+        </div>
+    </div></div>
+
+            <a id="butt_scroll" class="" style="background-color: rgb(204, 204, 204); opacity: 0.7; padding: 10px; position: fixed; bottom: 0px; right: 100px; cursor: pointer; display: block;" onclick="ScrollTop();return false;">Back to top ↑</a>
+
+      <!-- Gallery img preview -->
+            <div class="gallery_main" id="gallery_thumb" style="z-index:200000;">
+                <div class="gal_close"></div>
+                <div class="gp_prev"></div>
+                <div class="gallery">
+
+                </div>
+                <div class="gp_next"></div>
+                <div class="paging_main">
+                        <ul class="paging nav">					
+                        </ul>
+                </div>
+            </div>
+     <!-- Gallery img preview end -->
+     
+	 
+	 <div style="width: 100%;float:none;border-top: 1px solid #9C9C9C;border-bottom: 1px solid #9C9C9C;margin-top: 6em;">
+ 
+<link rel="stylesheet" href="./ConceptDraw Samples _ Business Processes - BPMN diagrams_files/menu.css">
+	<div id="see_also">
+			<div class="multy-col-list-wrapper">
+			<ul><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/flow-chart-and-its-functions" style="color: #666 !important;border-bottom: none !important;">Flowchart Symbols</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/swim-lanes-flowchart" style="color: #666 !important;border-bottom: none !important;">Swim Lanes</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/electrical-drawings" style="color: #666 !important;border-bottom: none !important;">Electrical Design</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/restaurants" style="color: #666 !important;border-bottom: none !important;">Restaurant Floor Plans</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/data-flow-diagram" style="color: #666 !important;border-bottom: none !important;">Data Flow Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/electrical-plan" style="color: #666 !important;border-bottom: none !important;">House Electrical Plan</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/diagrams" style="color: #666 !important;border-bottom: none !important;">Diagrams</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/bubble-diagram" style="color: #666 !important;border-bottom: none !important;">Bubble Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/emergency-plans" style="color: #666 !important;border-bottom: none !important;">Emergency Plans</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/gym-plans" style="color: #666 !important;border-bottom: none !important;">Gym Plans</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/SWOT-matrix" style="color: #666 !important;border-bottom: none !important;">SWOT Matrix</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/electrical-drawing" style="color: #666 !important;border-bottom: none !important;">Electrical Drawing</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/swim-lane" style="color: #666 !important;border-bottom: none !important;">Swim Lane</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/office-plan" style="color: #666 !important;border-bottom: none !important;">Office Plan</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/chart" style="color: #666 !important;border-bottom: none !important;">Charts and Graphs</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/nursing-concept-map-template-mac" style="color: #666 !important;border-bottom: none !important;">Concept Map Template</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/flowchart-symbols" style="color: #666 !important;border-bottom: none !important;">Flowchart Symbols</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/spoke-diagram" style="color: #666 !important;border-bottom: none !important;">Spoke Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/processes-of-operations-flow-chart" style="color: #666 !important;border-bottom: none !important;">Process Flow Chart</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/block-diagram" style="color: #666 !important;border-bottom: none !important;">Block Diagrams</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/vector-diagrams" style="color: #666 !important;border-bottom: none !important;">Vector Diagrams</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/diagram-examples" style="color: #666 !important;border-bottom: none !important;">Diagram Examples</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/dataflow-model-diagram" style="color: #666 !important;border-bottom: none !important;">Data Flow Model Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/draw-a-block-daigram-for-a-organization" style="color: #666 !important;border-bottom: none !important;">Organizational Chart</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/activities-in-a-project-management-software-with-example-diagram" style="color: #666 !important;border-bottom: none !important;">UML Diagram Example</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/diagram-symbol" style="color: #666 !important;border-bottom: none !important;">Diagram Symbols</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/bpmn-2-0-diagram-drawing-software" style="color: #666 !important;border-bottom: none !important;">BPMN 2.0</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/cycle-diagram-software" style="color: #666 !important;border-bottom: none !important;">Cycle Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/pyramid-concept-map" style="color: #666 !important;border-bottom: none !important;">Pyramid Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/concept-marketing" style="color: #666 !important;border-bottom: none !important;">Marketing Concept</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/draw-a-block-daigram-for-a-organization" style="color: #666 !important;border-bottom: none !important;">Block Chart</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/draw-a-block-daigram-for-a-organization" style="color: #666 !important;border-bottom: none !important;">Organization Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/cross-functional-flowchart" style="color: #666 !important;border-bottom: none !important;">Cross Functional Flow Chart</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/flowcharts-for-hr-processes" style="color: #666 !important;border-bottom: none !important;">Flow Chart</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/swim-lane-diagram" style="color: #666 !important;border-bottom: none !important;">Swim Lane Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/diagram-for-strategy" style="color: #666 !important;border-bottom: none !important;">Strategy Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/drawing-concept" style="color: #666 !important;border-bottom: none !important;">Concept Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/circular-arrows-diagram" style="color: #666 !important;border-bottom: none !important;">Circular Arrow Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/chemical-diagram" style="color: #666 !important;border-bottom: none !important;">Chemical Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/examples/professional-diagram" style="color: #666 !important;border-bottom: none !important;">Professional Diagram</a></li><li style="font-size: 0.85em; line-height: 2em;"><a href="http://www.conceptdraw.com/samples/" style="color: #666 !important;border-bottom: none !important;"></a></li></ul></div></div>	</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        initScrollButton();
+    });
+
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-219366-2']);
+   _gaq.push(['_setDomainName', '.conceptdraw.com']);
+   _gaq.push(['_setAllowHash', false]);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; 
+	s.parentNode.insertBefore(ga, s);
+   })();
+
+</script>
+
+
+<script>
+$.fn.scrollTo = function( target, options, callback ){
+    if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+    var settings = $.extend({
+        scrollTarget  : target,
+        offsetTop     : 50,
+        duration      : 500,
+        easing        : 'swing'
+    }, options);
+    return this.each(function(){
+        var scrollPane = $(this);
+        var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+        var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+        var scrollX = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().left + scrollPane.scrollLeft() - parseInt(settings.offsetLeft);
+        scrollPane.animate({scrollLeft : scrollX }, parseInt(settings.duration), settings.easing, function(){
+            if (typeof callback == 'function') { callback.call(this); }
+        });
+    });
+};
+$(window).load(function() {
+    var cso_scroller = $('.areas_banner>.cso_scroller');
+    var isinarea = false;
+    $('.areas_banner>.cso_scroller>.list').children().each(function () {
+        if (isinarea!=true && $(this).attr('href').indexOf("Business_Processes")==($(this).attr('href').indexOf('samples/')+'samples/'.length)) {
+            var target = $(this);
+            scrollleft = cso_scroller.width()/2 - target.width()/2 - parseFloat(target.css('padding-left'))/2 - parseFloat(target.css('margin-left'))/2;
+            cso_scroller.animate({scrollLeft: (target.offset().left - scrollleft + cso_scroller.scrollLeft())});
+            window.csoscrollerleft = (target.offset().left - scrollleft + cso_scroller.scrollLeft());
+            isinarea = true;
+        }
+    });
+})
+
+</script>
+<style>
+    #footer{
+        float: left;
+        font-family: open_sans, open_sans_regular, 'Open Sans', "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif !important;
+        font-size: 100%;
+        padding: 4.375rem;
+        width: 100%;
+        height: 12.25rem;
+        box-sizing: border-box;
+        background: #FFF;
+        margin: 0;
+        text-align: left;
+        line-height: 1.42;
+    }
+
+    #footer > div{
+        width: 50%;
+    }
+    #footer p
+    {
+        font-weight: normal;
+        font-size: 1.33em;
+        line-height: 1.33;
+        padding-bottom: 3px;
+        margin: 0;
+        padding-top: 1px;
+    }
+    .footer_links_left
+    {
+        float:left;
+        font-size: .75rem;
+        font-weight: 600;
+        width: 50%;
+    }
+    .footer_links_left p {
+        font-size: 1.33em !important;
+    }
+    .footer_links_right
+    {
+        float: right;
+        font-size: .65em;
+        color: rgb(153, 153, 153);
+        text-align: right;
+        width: 50%;
+    }
+
+    .footer_links_right p{
+       font-size: .75rem !important;
+      margin: .65rem 0 0 0 !important;
+    }
+
+    a.foo_links {
+    display: inline;
+    color: #3fa9f5;
+    font-size: .745rem;
+    line-height: 1.31;
+    text-decoration: none;
+    border: none;
+    }
+    .footer_links_right .foo_links:hover {
+    color: #21587F;
+}
+    .foo_links:after{
+    content: "  |  ";
+    padding: 0.3em;
+    }
+
+    .footer_links_right a:last-of-type:after {
+    content: "";
+    padding: 0;
+}
+    @media only screen and (max-width: 820px){
+    div#footer > div {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+    }
+
+    @media only screen and (max-height: 890px){
+        #footer {
+            position: initial;
+
+        }
+    }
+    @media only screen and (max-width: 650px){
+        #footer{
+            padding: 2.35rem 0;
+        }
+    }
+    @media only screen and (max-width: 570px){
+        .foo_links:after {
+            padding: 0.1em;
+        }
+    }
+</style>
+<footer role="contentinfo">
+    <div id="footer" role="contentinfo">
+        <div class="footer_links_left">	<p>CS Odessa</p> Plan. Do. Communicate.</div>
+        <div class="footer_links_right">
+            <a class="foo_links" href="http://www.conceptdraw.com/products/contact-us">Contact Us</a>
+            <a class="foo_links" href="http://helpdesk.conceptdraw.com/ticket.php">Feedback</a>
+            <a class="foo_links" href="http://www.conceptdraw.com/products/eula">EULA</a>
+            <a class="foo_links" href="http://www.conceptdraw.com/products/privacy">Privacy</a>
+            <a class="foo_links" href="http://www.conceptdraw.com/products/tou">TOU</a>
+            <a class="foo_links" href="http://www.conceptdraw.com/products/terms-of-service">TOS</a>
+            <p> © 1993 — 2017 CS Odessa Corp. </p>
+</div>
+</div></footer><script type="text/javascript">
+
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-219366-2']);
+   _gaq.push(['_setDomainName', '.conceptdraw.com']);
+   _gaq.push(['_setAllowHash', false]);
+   /*_gaq.push(['_trackPageview']);*/
+   _gaq.push(['_trackPageview', location.pathname + location.search + location.hash]);
+
+   (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; 
+	s.parentNode.insertBefore(ga, s);
+   })();
+
+</script> 
+</body></html>

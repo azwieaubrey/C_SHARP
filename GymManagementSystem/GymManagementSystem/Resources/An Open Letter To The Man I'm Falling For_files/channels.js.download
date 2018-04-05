@@ -1,0 +1,23 @@
+
+
+
+var oo_profile={
+ tokenType : "1",
+ tracking : "148302,212422,393784,372952,227238",
+ tags : "J6HPKaOX,KWRR1CcQ,K5doSAW_,KsA-1R28,KZtjpwa1",
+ tagcloud : [
+  { tag: "J6HPKaOX", weight: 100, token: "148302"}, 
+  { tag: "KWRR1CcQ", weight: 100, token: "212422"}, 
+  { tag: "K5doSAW_", weight: 100, token: "393784"}, 
+  { tag: "KsA-1R28", weight: 100, token: "372952"}, 
+  { tag: "KZtjpwa1", weight: 100, token: "227238"}
+  ],
+ pixels : [
+  { url: "https://pixel.rubiconproject.com/tap.php?s=oz&v=148302||212422||393784||372952||227238||"}
+  ]
+};
+
+
+try {
+oz_onPixelsLoaded(oo_profile);
+} catch(ignore) {}

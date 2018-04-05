@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)http://www.bpmn.org/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta content="en-us" http-equiv="Content-Language">
+		
+		<title>BPMN Specification - Business Process Model and Notation</title>
+		<meta name="description" content="Providing the most accurate and up to date information about BPMN 2.0 - BPMN.org is your official BPMN resource for Business Process Model and Notation.">
+		<meta name="keywords" content="bpm, bpmn, bpmn 2.0, business process, business process modeling, process modeling, business process model and notation, bpm certification, bpmn quick guide">
+		<meta name="robots" content="INDEX,FOLLOW">
+		<link type="text/css" href="./BPMN Specification - Business Process Model and Notation_files/jquery-ui-1.8.16.custom.css" rel="stylesheet">
+		<link type="text/css" href="./BPMN Specification - Business Process Model and Notation_files/bpmn.org.css" rel="stylesheet">
+		<script async="" src="./BPMN Specification - Business Process Model and Notation_files/analytics.js.download"></script><script src="./BPMN Specification - Business Process Model and Notation_files/jquery.min.js.download"></script>
+		<script src="./BPMN Specification - Business Process Model and Notation_files/jquery-ui.min.js.download"></script>
+	<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-8866786-11", "auto");ga("send", "pageview");</script></head>
+	<body>
+	<div id="header">
+		<a href="http://www.omg.org/"><img id="omg-logo" style="float:left" border="0" width="150" height="65" alt="OMG logo" src="./BPMN Specification - Business Process Model and Notation_files/OMG-logo-TAG-tm.gif"></a>
+		<img id="bpmn-logo" style="float:right" border="0" width="150" height="68" src="./BPMN Specification - Business Process Model and Notation_files/bpmn_search.png" alt="BPMN logo">
+		<h1 align="center">Object Management Group<br>Business Process Model and Notation</h1>
+	</div>
+
+	<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+		<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+			<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-home" aria-labelledby="ui-id-1" aria-selected="true"><a href="http://www.bpmn.org/#tabs-home" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Menu&#39;, &#39;home&#39;]);" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Home</a></li>
+			<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-docs" aria-labelledby="ui-id-2" aria-selected="false"><a title="BPMN Documents" href="http://www.bpmn.org/#tabs-docs" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Menu&#39;, &#39;docs&#39;]);" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Documents</a></li>
+			<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-quickguide" aria-labelledby="ui-id-3" aria-selected="false"><a title="BPMN Quick Guide" href="http://www.bpmn.org/#tabs-quickguide" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Menu&#39;, &#39;quickguide&#39;]);" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Quick Guide</a></li>
+			<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-examples" aria-labelledby="ui-id-4" aria-selected="false"><a title="BPMN Examples" href="http://www.bpmn.org/#tabs-examples" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Menu&#39;, &#39;examples&#39;]);" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Examples</a></li>
+			<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-implementers" aria-labelledby="ui-id-5" aria-selected="false"><a title="BPMN Implementers" href="http://www.bpmn.org/#tabs-implementers" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Menu&#39;, &#39;implementers&#39;]);" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5">Implementers</a></li>
+			<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-resources" aria-labelledby="ui-id-6" aria-selected="false"><a title="BPMN Resources" href="http://www.bpmn.org/#tabs-resources" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Menu&#39;, &#39;ressources&#39;]);" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-6">Resources</a></li>
+			<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-cloudapps" aria-labelledby="ui-id-7" aria-selected="false"><a title="BPMN Cloud Apps" href="http://www.bpmn.org/#tabs-cloudapps" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Menu&#39;, &#39;ressources&#39;]);" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-7">Cloud Apps</a></li>
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-miwg" aria-labelledby="ui-id-8" aria-selected="false"><a title="Model Interchange Working Group" href="http://www.bpmn.org/#tabs-miwg" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Menu&#39;, &#39;miwg&#39;]);" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-8">BPMN MIWG</a></li>
+		</ul>
+		<div id="tabs-home" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+
+			<div id="glossary">
+				<iframe width="250px" height="108px" frameborder="0" src="./BPMN Specification - Business Process Model and Notation_files/ab51cc043060b12a74936702638ba767.html"></iframe>
+			</div>
+			<div id="charter">
+				<h3 class="ui-widget-header ui-corner-all">Charter</h3>
+				<p>A standard Business Process Model and Notation (BPMN) will provide businesses with the capability of understanding their internal business procedures in a graphical notation and will give organizations the ability to communicate these procedures in a standard manner. Furthermore, the graphical notation will facilitate the understanding of the performance collaborations and business transactions between the organizations. This will ensure that businesses will understand themselves and participants in their business and will enable organizations to adjust to new internal and B2B business circumstances quickly.</p>
+			</div>
+			<div id="current">
+				<h3 class="ui-widget-header ui-corner-all">Current BPMN Specification</h3>
+				<p>
+				</p><ul>
+					<li><a title="OMG BPMN 2.0 Specifications" href="http://www.omg.org/spec/BPMN/2.0/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Link&#39;, &#39;BPMN v2.0&#39;]);">BPMN v2.0</a></li>
+					<li><a title="OMG BPMN 2.0 by Example - BPMN 2.0 Examples" href="http://www.omg.org/cgi-bin/doc?dtc/10-06-02" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Link&#39;, &#39;BPMN 2.0 by Example: non-normative OMG document with BPMN 2.0 examples&#39;]);">BPMN 2.0 by Example: non-normative OMG document with BPMN 2.0 examples</a></li>
+					<li><a title="BPMN Quick Guide - Business Process Model and Notation" href="http://www.bpmnquickguide.com/">BPMN Quick Guide</a></li>
+				</ul>
+				<p></p>
+			</div>
+
+			<div id="oceb">
+				<h3 class="ui-widget-header ui-corner-all">BPM Certification</h3>
+				<p><a title="OCEB Certification" href="http://www.omg.org/oceb/"><img src="./BPMN Specification - Business Process Model and Notation_files/OCEB-Round.gif" border="0" height="108px" widht="108px" style="float:left;" alt="OMG OCEB Certification badge"></a>
+				The <a title="OCEB Program" href="http://www.omg.org/oceb/">OCEB program</a> consists of five examinations, granting five Certifications. Above the single Fundamental level, the program splits into two tracks - one Business-oriented , the other Technically oriented.<br><br>
+				Credentials are important in the BPM world, where practitioners may work on many projects for different clients or employers over time. <a title="25 BPM Experts" href="http://www.omg.org/oceb/authors.htm"> The twenty-five experts</a> from top BPM
+				companies and well-known independent consultants who designed the OCEB topical coverage and wrote the exam questions want peers and prospective employers to feel confident about a
+				certified candidate's ability to participate in or lead real-world initiatives in enterprise BPM. Your status as an OCEB Certified
+				Professional shows current and future employers or clients that you have the required knowledge and skills, making you a
+				more attractive candidate for hiring and promotion.
+				</p>
+
+			</div>
+			<div id="faq">
+			<h3 class="ui-widget-header ui-corner-all">Frequently Asked Questions (FAQ)</h3>
+				<p class="wikipedia"><a title="BPMN Wikipedia" href="http://en.wikipedia.org/wiki/BPMN">Wikipedia Entry</a></p>
+				<div id="faq-accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+					<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-faq-accordion-header-0" aria-controls="ui-accordion-faq-accordion-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="http://www.bpmn.org/#" style="margin-left:12px;">High-Level (business) Questions</a></h3>
+					<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-faq-accordion-panel-0" aria-labelledby="ui-accordion-faq-accordion-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none; height: 696px;">
+						<p class="question">What is BPMN?</p>
+						<p class="answer">The Business Process Modeling Notation (BPMN) is a graphical notation that depicts the steps in a business process. BPMN depicts the end to end flow of a business process. The notation has been specifically designed to coordinate the sequence of processes and the messages that flow between different process participants in a related set of activities.</p>
+
+						<p class="question">Why is BPMN important?</p>
+						<p class="answer">The world of business processes has changed dramatically over the past few years. Processes can be coordinated from behind, within and over organizations natural boundaries. A business process now spans multiple participants and coordination can be complex. Until BPMN, there has not been a standard modelling technique developed that addresses these issues. BPMN has been developed to provide users with a royalty free notation. This will benefit users in a similar manner in which UML standardised the world of software engineering. There will be training courses, books and a body of knowledge that users can access in order to better implement a business process.
+
+						</p><p class="question">Who is BPMN targeted at?</p>
+						<p class="answer">BPMN is targeted at a high level for business users and at a lower level for process implementers. The business users should be able to easily read and understand a BPMN business process diagram. The process implementer should be able to adorn a business process diagram with further detail in order to represent the process in a physical implementation. BPMN is targeted at users, vendors and service providers that need to communicate business processes in a standard manner.</p>
+
+						<p class="question">What does this mean for UML users?</p>
+						<p class="answer">The unified modelling language (UML) takes an object-oriented approach to the modeling of applications, while BPMN takes a process-oriented approach to modelling of systems. Where BPMN has a focus on business processes, the UML has a focus on software design and therefore the two are not competing notations but are different views on systems. The BPMN and the UML are compatible with each other. A business process model does not necessarily have to be implemented as an automated business process in a process execution language. Where this is the case, business processes and participants can be mapped to constructs such as use cases and behavioural models in the UML. Further white papers will follow on the mapping between these techniques.</p>
+
+						<p class="question">Will there be a major rewrite?</p>
+						<p class="answer">Not for 2 or 3 years...</p>
+					</div>
+
+					<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-faq-accordion-header-1" aria-controls="ui-accordion-faq-accordion-panel-1" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="http://www.bpmn.org/#" style="margin-left:12px;">Technical Questions</a></h3>
+					<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-faq-accordion-panel-1" aria-labelledby="ui-accordion-faq-accordion-header-1" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none; height: 696px;">
+						<p class="question">What is the relationship between BPMN and BPEL?</p>
+						<p class="answer">BPEL is an XML-based language for describing a business process in which most of the tasks represent interactions between the process and external Web services. The BPEL process itself is represented as a Web service, and is realized by a BPEL engine which executes the process description. BPMN is a standard set of diagramming conventions for describing business processes. It is designed to visualize a rich set of process flow semantics within a process and the communication between independent processes. It is intended to support capture of sufficient detail to allow it to be the source of an executable process description. Since BPEL is currently considered the most important standard for execution languages, a translation to BPEL is specified in the BPMN standard. By design there are some limitations on the process topologies that can be described in BPEL, so it is possible to represent processes in BPMN that cannot be mapped to BPEL. There are a few concepts, such as Ad-Hoc sub-proceses, that BPMN can represent that may not be implemented with any technology.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div id="tabs-docs" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+			<ul>
+				<li><a href="http://www.omg.org/spec/BPMN/2.0/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Link&#39;, &#39;BPMN v2.0&#39;]);">BPMN v2.0</a></li>
+				<li><a href="http://www.omg.org/cgi-bin/doc?dtc/10-06-02" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Link&#39;, &#39;BPMN 2.0 by Example: non-normative OMG document with BPMN 2.0 examples&#39;]);">BPMN 2.0 by Example: non-normative OMG document with BPMN 2.0 examples</a></li>
+				<li><a href="http://www.bpmb.de/index.php/BPMNPoster" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Link&#39;, &#39;BPMN 2.0 Poster&#39;]);">BPMN 2.0 Poster</a></li>
+				<li><a href="http://www.omg.org/cgi-bin/doc?dtc/09-08-14" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Link&#39;, &#39;BPMN v2.0 Beta 1&#39;]);">BPMN v2.0 Beta 1</a></li>
+				<li><a href="http://www.omg.org/spec/BPMN/1.2/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Link&#39;, &#39;BPMN 1.2&#39;]);">BPMN 1.2</a></li>
+				<li><a href="http://bpt.hpi.uni-potsdam.de/pub/Public/BPMNCorner/BPMN1_1_Poster_EN.pdf" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Link&#39;, &#39;BPMN 1.1 Poster&#39;]);">BPMN 1.1 Poster</a></li>
+			</ul>
+
+			<ul>
+				<li>
+					<a target="_blank" title="Feature: BPMN 2.0: The emerging star of business process modeling" href="http://www.omg.org/w-new/bpmn.htm">Feature: BPMN 2.0: The emerging star of business process modeling</a><br>
+					<font color="#808080" size="2"><b><em><span style="font-weight: 400">by Alan Earls</span></em></b></font>
+				</li>
+				<li>
+					<a title="Process Driven Modernization in Insurance" href="http://www.omg.org/cgi-bin/doc?omg/2010-07-01">Process Driven Modernization in Insurance</a><br>
+					<font color="#808080" size="2"><b><em><span style="font-weight: 400">by Jason Dokken, Principal Global Architect, Insurance, TIBCO Software Inc.</span></em></b></font>
+				</li>
+			</ul>
+		</div>
+		<div id="tabs-quickguide" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+			<div id="quickguide-message">Click <a title="BPMN Quick Guide" href="http://www.bpmnquickguide.com/getit.html">here</a> to get your own BPMN Quick Guide.</div>
+				<div class="ui-corner-all" style="border:1px solid #DDD;padding:3px">
+					<iframe src="./BPMN Specification - Business Process Model and Notation_files/index.html" style="width:100%;height:724px;border:none;"></iframe>
+				</div>
+		</div>
+		<div id="tabs-examples" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+			<h3 class="ui-widget-header ui-corner-all">BPMN Drawing Examples</h3>
+			<iframe id="bpi_feed_examples" name="bpi_feed_examples" src="./BPMN Specification - Business Process Model and Notation_files/dfb1cc1a17d2ec67e4b79576acc0b49c.html" frameborder="0" width="100%" height="800"></iframe>
+		</div>
+		<div id="tabs-implementers" aria-labelledby="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+			<h3 class="ui-widget-header ui-corner-all">BPMN Implementers</h3>
+			<p align="center"><iframe scrolling="auto" id="bpi_feed_implementers" name="bpi_feed_implementers" src="./BPMN Specification - Business Process Model and Notation_files/0769024f19772de78bd21b157c4afca6.html" frameborder="0" width="100%" height="800"></iframe></p>
+		</div>
+		<div id="tabs-resources" aria-labelledby="ui-id-6" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+			<h3 class="ui-widget-header ui-corner-all">BPMN Books</h3>
+			<iframe id="bpi_feed_books" name="bpi_feed_books" src="./BPMN Specification - Business Process Model and Notation_files/2664abc1f1dc21e935062bb62ea7f989.html" frameborder="0" width="100%" height="600"></iframe>
+
+			<h3 class="ui-widget-header ui-corner-all">Everything BPMN</h3>
+			<iframe id="bpi_feed_bpmn" name="bpi_feed_bpmn" src="./BPMN Specification - Business Process Model and Notation_files/e18dfec4899dccdd614135f1d3bdb71e.html" frameborder="0" width="100%" height="600"></iframe>
+		</div>
+		<div id="tabs-cloudapps" align="center" aria-labelledby="ui-id-7" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+			<div id="quickguide-message">The Business Process Cloud Apps Selector can help you Verify, Validate, Convert and Visualize your BPMN files. You can also use the Cloud Apps to convert your existing BPM assets to the BPMN 2.0 standard. To use it, you need an account on the <a href="http://www.businessprocessincubator.com/">Business Process Incubator</a>. Start by choosing the type of BPM asset you want to use then the type of action that you would like to do on it and finally the service that better suits your need.</div>
+			<iframe align="center" id="bpi_cloudapps" name="bpi_cloudapps" src="./BPMN Specification - Business Process Model and Notation_files/76a705a13cf9e55c046a74060434155f.html" frameborder="0" width="900" height="1660"></iframe>
+		</div>
+        
+        <!-- MIWG -->
+        <div id="tabs-miwg" aria-labelledby="ui-id-8" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+            <img src="./BPMN Specification - Business Process Model and Notation_files/bpmn-miwg.png" alt="BPMN MIWG" title="BPMN Model Interchange Working Group" width="400" class="text-center">
+            <h2 class="text-center v-offset-md">The purpose of the BPMN MIWG is to support, facilitate, and promote the interchange of BPMN Models.</h2>
+            
+            <div class="clearfix">
+                <h3 class="ui-widget-header ui-corner-all">Mandate</h3>
+                <div class="col-6">
+                    <h3>Facilitate and demonstrate BPMN Model Interchange amongst tools that implement the standard</h3>
+                    <p>Define various test cases that address both breadth and depth of BPMN Model Interchange taking into consideration the various defined conformance classes of the BPMN standard (Initial scope will be limited to the Process Modeling Conformance Class and its sub-classes).</p>
+                    <h3>Resolve vendors' misinterpretation of the specification that inhibit BPMN Model Interchange</h3>
+                    <p>Guide and support vendor into their implementations of the standard.</p>
+                </div>
+                <div class="col-6">
+                    <h3>Identify and report defects that break BPMN Model Interchange</h3>
+                    <p>Identify and report BPMN specification Model Interchange issues to the BPMN RTF for resolution</p>
+                    <h3>Establish a BPMN Model Interchange demonstration infrastructure to support the above, including:</h3>
+                    <ul>
+                        <li>Demonstration Processes,</li>
+                        <li>Guidelines, and</li>
+                        <li>Validation tools.</li>
+                    </ul>
+                </div>                
+            </div>
+            
+            <h3 class="ui-widget-header ui-corner-all">BPMN MIWG Repository</h3>
+            <div class="clearfix">
+                <div class="col-6">
+                    <p>BPMN 2.0 Test Cases (Models, Diagrams, Serializations) created by the BPMN Model Interchange Working Group (BPMN MIWG) along with testing procedures can be found on <a href="https://github.com/bpmn-miwg" target="_blank">Github</a>.</p>
+                    <p><a href="http://bpmn-miwg.github.io/bpmn-miwg-tools/" target="_blank">View Current test results on various tools</a></p>
+                </div>
+                <div class="col-6">
+                    <a href="http://bpmn-miwg.github.io/bpmn-miwg-tools/" target="_blank" title="Click to view Current test results on various tools"><img src="./BPMN Specification - Business Process Model and Notation_files/bpmn-miwg-repository.jpg" alt="BPMN Tools Tested for Model Interchange"></a>
+                </div>                
+            </div>
+            
+            <h3 class="ui-widget-header ui-corner-all">Model Interchange Capability Demos</h3>
+            
+            <iframe id="bpi_miwg" name="bpi_miwg" src="./BPMN Specification - Business Process Model and Notation_files/saved_resource.html" frameborder="0" width="100%" height="800"></iframe>
+            
+            <hr class="v-offset-lg">
+            <div class="clearfix">
+                <h2 class="text-center"><a href="http://www.omgwiki.org/bpmn-miwg/doku.php" target="_blank">Read more about BPMN MIWG<br>on www.omgwiki.org</a></h2>      
+            </div> 
+            
+		</div>
+	</div>
+
+	<div id="incubated-by-bpi-footer" onclick="location.href=&#39;http://www.businessprocessincubator.com/&#39;;">
+		<div id="incubated-by-bpi-img"></div>
+		<div id="incubated-by-bpi-line"></div>
+	</div>
+	<div id="footer">
+	    <p>Copyright © 1997-2016 Object Management Group, Inc. All Rights Reserved. For questions about the WEBSITE, please contact <a href="mailto:webmaster@omg.org">webmaster@omg.org</a> For TECHNICAL questions, please contact <a href="mailto:webtech@omg.org">webtech@omg.org </a></p>
+	</div>
+    <script type="text/javascript">
+        $( "#tabs" ).tabs({
+           activate: function(event, ui) {
+           
+                ui.newPanel.find('iframe').each(function() {
+                    if ($(this).attr('data-resized') != 'true'){
+                    
+                        $(this).attr('src', $(this).attr('src')).attr('data-resized', 'true');
+                    }
+                });
+           }
+        });
+        $( "#faq-accordion" ).accordion({ collapsible: true, active:false });
+    </script>    
+	
+
+
+
+</body></html>

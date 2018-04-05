@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="80a9619e30d14ea0b7e190230de55da5" Name="Diagram1" ShowGrid="false" ZoomLevel="100">
+        <EntityTypeShape EntityType="GMS_DBModel.Category" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.Customer" Width="1.5" PointX="10" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.CustomerMembership" Width="1.875" PointX="12.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.FitnessMeasurement" Width="1.5" PointX="7.625" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.Log" Width="1.5" PointX="4.875" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.Membership" Width="1.5" PointX="9.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.OrderedProduct" Width="1.5" PointX="4.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.Product" Width="1.5" PointX="4.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.ProductSold" Width="1.5" PointX="6.875" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.Registration" Width="1.5" PointX="2.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.Stock" Width="1.5" PointX="9.875" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.SubCategory" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.Supplier" Width="1.5" PointX="6.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GMS_DBModel.Temp_Stock" Width="1.5" PointX="6.875" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="GMS_DBModel.FK_SubCategory_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_CustomerMembership_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_CustomerMembership_Membership" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_FitnessMeasurement_CustomerMembership" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_Logs_ToRegistration" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_ProductSold_OrderedProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_Product_SubCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_ProductSold_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_Stock_ToProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_Temp_Stock_ToProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="GMS_DBModel.FK_Stock_ToSupplier" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

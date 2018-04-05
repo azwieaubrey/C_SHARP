@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GMS_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Cat_ID" />
+    </Key>
+    <Property Name="Cat_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="200" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SubCategories" Relationship="Self.FK_SubCategory_Category" FromRole="Category" ToRole="SubCategory" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="C_ID" />
+    </Key>
+    <Property Name="C_ID" Type="Int32" Nullable="false" />
+    <Property Name="CustomerID" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ContactNo" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="true" Unicode="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <NavigationProperty Name="CustomerMemberships" Relationship="Self.FK_CustomerMembership_Customer" FromRole="Customer" ToRole="CustomerMembership" />
+  </EntityType>
+  <EntityType Name="CustomerMembership">
+    <Key>
+      <PropertyRef Name="CM_ID" />
+    </Key>
+    <Property Name="CM_ID" Type="Int32" Nullable="false" />
+    <Property Name="CustMembershipID" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="MembershipID" Type="Int32" Nullable="false" />
+    <Property Name="DateFrom" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Months" Type="Int32" Nullable="false" />
+    <Property Name="DateTo" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ChargesPerMonth" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountPer" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATPer" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ServiceTaxPer" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ServiceTaxAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalCharges" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BillDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SubTotal" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="GrandTotal" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalPaid" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Balance" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_CustomerMembership_Customer" FromRole="CustomerMembership" ToRole="Customer" />
+    <NavigationProperty Name="Membership" Relationship="Self.FK_CustomerMembership_Membership" FromRole="CustomerMembership" ToRole="Membership" />
+    <NavigationProperty Name="FitnessMeasurements" Relationship="Self.FK_FitnessMeasurement_CustomerMembership" FromRole="CustomerMembership" ToRole="FitnessMeasurement" />
+  </EntityType>
+  <EntityType Name="FitnessMeasurement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CustMembershipID" Type="Int32" Nullable="false" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BodyFat" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BodyMass" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="CustomerMembership" Relationship="Self.FK_FitnessMeasurement_CustomerMembership" FromRole="FitnessMeasurement" ToRole="CustomerMembership" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Operation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Registration" Relationship="Self.FK_Logs_ToRegistration" FromRole="Logs" ToRole="Registration" />
+  </EntityType>
+  <EntityType Name="Membership">
+    <Key>
+      <PropertyRef Name="M_ID" />
+    </Key>
+    <Property Name="M_ID" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ChargesPerMonth" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ServiceTax" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VAT" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <NavigationProperty Name="CustomerMemberships" Relationship="Self.FK_CustomerMembership_Membership" FromRole="Membership" ToRole="CustomerMembership" />
+  </EntityType>
+  <EntityType Name="OrderedProduct">
+    <Key>
+      <PropertyRef Name="B_ID" />
+    </Key>
+    <Property Name="B_ID" Type="Int32" Nullable="false" />
+    <Property Name="BillNo" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="GrandTotal" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Cash" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Change" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BillDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="ProductSolds" Relationship="Self.FK_ProductSold_OrderedProduct" FromRole="OrderedProduct" ToRole="ProductSold" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="P_ID" />
+    </Key>
+    <Property Name="P_ID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Features" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SubCategoryID" Type="Int32" Nullable="false" />
+    <Property Name="VAT" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ST" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Discount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <NavigationProperty Name="SubCategory" Relationship="Self.FK_Product_SubCategory" FromRole="Product" ToRole="SubCategory" />
+    <NavigationProperty Name="ProductSolds" Relationship="Self.FK_ProductSold_Product" FromRole="Product" ToRole="ProductSold" />
+    <NavigationProperty Name="Stocks" Relationship="Self.FK_Stock_ToProduct" FromRole="Product" ToRole="Stock" />
+    <NavigationProperty Name="Temp_Stock" Relationship="Self.FK_Temp_Stock_ToProduct" FromRole="Product" ToRole="Temp_Stock" />
+  </EntityType>
+  <EntityType Name="ProductSold">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BillID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="VATPer" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="StPer" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="StAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountPer" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <NavigationProperty Name="OrderedProduct" Relationship="Self.FK_ProductSold_OrderedProduct" FromRole="ProductSold" ToRole="OrderedProduct" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_ProductSold_Product" FromRole="ProductSold" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Registration">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="UserType" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ContactNo" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="EmailID" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+    <Property Name="JoiningDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Logs" Relationship="Self.FK_Logs_ToRegistration" FromRole="Registration" ToRole="Logs" />
+  </EntityType>
+  <EntityType Name="Stock">
+    <Key>
+      <PropertyRef Name="ST_Id" />
+    </Key>
+    <Property Name="ST_Id" Type="Int32" Nullable="false" />
+    <Property Name="StockID" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="SupplierID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Stock_ToProduct" FromRole="Stock" ToRole="Product" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK_Stock_ToSupplier" FromRole="Stock" ToRole="Supplier" />
+  </EntityType>
+  <EntityType Name="SubCategory">
+    <Key>
+      <PropertyRef Name="Scat_ID" />
+    </Key>
+    <Property Name="Scat_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="SubCategoryName" Type="String" MaxLength="200" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_SubCategory_Category" FromRole="SubCategory" ToRole="Category" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_SubCategory" FromRole="SubCategory" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="S_ID" />
+    </Key>
+    <Property Name="S_ID" Type="Int32" Nullable="false" />
+    <Property Name="SupplierID" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ContactNo" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="true" Unicode="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <NavigationProperty Name="Stocks" Relationship="Self.FK_Stock_ToSupplier" FromRole="Supplier" ToRole="Stock" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Temp_Stock">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Temp_Stock_ToProduct" FromRole="Temp_Stock" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK_SubCategory_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="SubCategory" Type="Self.SubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Cat_ID" />
+      </Principal>
+      <Dependent Role="SubCategory">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerMembership_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="CustomerMembership" Type="Self.CustomerMembership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="C_ID" />
+      </Principal>
+      <Dependent Role="CustomerMembership">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerMembership_Membership">
+    <End Role="Membership" Type="Self.Membership" Multiplicity="1" />
+    <End Role="CustomerMembership" Type="Self.CustomerMembership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Membership">
+        <PropertyRef Name="M_ID" />
+      </Principal>
+      <Dependent Role="CustomerMembership">
+        <PropertyRef Name="MembershipID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FitnessMeasurement_CustomerMembership">
+    <End Role="CustomerMembership" Type="Self.CustomerMembership" Multiplicity="1" />
+    <End Role="FitnessMeasurement" Type="Self.FitnessMeasurement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerMembership">
+        <PropertyRef Name="CM_ID" />
+      </Principal>
+      <Dependent Role="FitnessMeasurement">
+        <PropertyRef Name="CustMembershipID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Logs_ToRegistration">
+    <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
+    <End Role="Logs" Type="Self.Log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Registration">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Logs">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductSold_OrderedProduct">
+    <End Role="OrderedProduct" Type="Self.OrderedProduct" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProductSold" Type="Self.ProductSold" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderedProduct">
+        <PropertyRef Name="B_ID" />
+      </Principal>
+      <Dependent Role="ProductSold">
+        <PropertyRef Name="BillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_SubCategory">
+    <End Role="SubCategory" Type="Self.SubCategory" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubCategory">
+        <PropertyRef Name="Scat_ID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="SubCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductSold_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ProductSold" Type="Self.ProductSold" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="P_ID" />
+      </Principal>
+      <Dependent Role="ProductSold">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stock_ToProduct">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Stock" Type="Self.Stock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="P_ID" />
+      </Principal>
+      <Dependent Role="Stock">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Temp_Stock_ToProduct">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Temp_Stock" Type="Self.Temp_Stock" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="P_ID" />
+      </Principal>
+      <Dependent Role="Temp_Stock">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stock_ToSupplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="1" />
+    <End Role="Stock" Type="Self.Stock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="S_ID" />
+      </Principal>
+      <Dependent Role="Stock">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GMS_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="CustomerMemberships" EntityType="Self.CustomerMembership" />
+    <EntitySet Name="FitnessMeasurements" EntityType="Self.FitnessMeasurement" />
+    <EntitySet Name="Logs" EntityType="Self.Log" />
+    <EntitySet Name="Memberships" EntityType="Self.Membership" />
+    <EntitySet Name="OrderedProducts" EntityType="Self.OrderedProduct" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductSolds" EntityType="Self.ProductSold" />
+    <EntitySet Name="Registrations" EntityType="Self.Registration" />
+    <EntitySet Name="Stocks" EntityType="Self.Stock" />
+    <EntitySet Name="SubCategories" EntityType="Self.SubCategory" />
+    <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Temp_Stock" EntityType="Self.Temp_Stock" />
+    <AssociationSet Name="FK_SubCategory_Category" Association="Self.FK_SubCategory_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="SubCategory" EntitySet="SubCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerMembership_Customer" Association="Self.FK_CustomerMembership_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="CustomerMembership" EntitySet="CustomerMemberships" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerMembership_Membership" Association="Self.FK_CustomerMembership_Membership">
+      <End Role="Membership" EntitySet="Memberships" />
+      <End Role="CustomerMembership" EntitySet="CustomerMemberships" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FitnessMeasurement_CustomerMembership" Association="Self.FK_FitnessMeasurement_CustomerMembership">
+      <End Role="CustomerMembership" EntitySet="CustomerMemberships" />
+      <End Role="FitnessMeasurement" EntitySet="FitnessMeasurements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Logs_ToRegistration" Association="Self.FK_Logs_ToRegistration">
+      <End Role="Registration" EntitySet="Registrations" />
+      <End Role="Logs" EntitySet="Logs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductSold_OrderedProduct" Association="Self.FK_ProductSold_OrderedProduct">
+      <End Role="OrderedProduct" EntitySet="OrderedProducts" />
+      <End Role="ProductSold" EntitySet="ProductSolds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_SubCategory" Association="Self.FK_Product_SubCategory">
+      <End Role="SubCategory" EntitySet="SubCategories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductSold_Product" Association="Self.FK_ProductSold_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductSold" EntitySet="ProductSolds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stock_ToProduct" Association="Self.FK_Stock_ToProduct">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Stock" EntitySet="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Temp_Stock_ToProduct" Association="Self.FK_Temp_Stock_ToProduct">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Temp_Stock" EntitySet="Temp_Stock" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stock_ToSupplier" Association="Self.FK_Stock_ToSupplier">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="Stock" EntitySet="Stocks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
